@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-
-import { connect } from 'react-redux';
-
-
 class TempForm extends Component {
+
+    constructor(props) {
+        super(props);
+        this.state = { value: "" }
+        this.handleSelect = this.handleSelect.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+    }
 
     componentDidMount() {
         if(!this.props.loaded) {
@@ -11,6 +14,14 @@ class TempForm extends Component {
         };
     };
 
+    handleChange(e) {
+        this.setState({ value: e.currentTarget.value })
+    }
+
+    handleSelect() {
+
+        console.log("select!")
+    }
 
     render() {
 
@@ -18,16 +29,22 @@ class TempForm extends Component {
 
         return(
             <>
-                <form>
+                <form onSubmit={ this.handleSelect }>
                     <label>Where do you want to camp?</label>
-                    <select>
+                    <select onChange={ this.handleChange } value={ this.state.value }>
                         { regions.map((region, index) => (
-                            <option key={ index }>{ region.region_name }</option>
+                            <option
+                                key={ index }
+                                value={ region.id }>
+                                    { region.region_name }
+                            </option>
                         ))}
                     </select>
-                </form>
 
                 <button>Search</button>
+
+                </form>
+
             </>
         )
     }
