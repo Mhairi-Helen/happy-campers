@@ -1,11 +1,18 @@
 import React from 'react';
-import './App.css';
+import '../css/App.css';
 
-function App() {
-  return (
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
+
+
+const App = () => (
+
+  <Router>
+
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -19,7 +26,9 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
+
+  </Router>
+
+)
 
 export default App;
