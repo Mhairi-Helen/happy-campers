@@ -6,6 +6,9 @@ import {
     Route,
     Switch
 } from 'react-router-dom';
+import TempForm from './components/TempForm/TempForm';
+import TempListing from './components/TempListing/TempListing';
+
 
 
 
@@ -16,25 +19,25 @@ function App() {
             <Router>
                 <Switch>
                     <Route exact path="/">
-                        <form>
-                            <label>Where do you want to camp?</label>
-                            <select>
-                                <option>Bristol</option>
-                                <option>Cornwall</option>
-                                <option>Devon</option>
-                            </select>
-                        </form>
-
-                        <button>Search</button>
+                        <TempForm />
                     </Route>
 
                     <Route exact path="/campsites">
-                        <ul>
-                            <li>Campsite 1</li>
-                            <li>Campsite 2</li>
-                            <li>Campsite 3</li>
-                            <li>Campsite 4</li>
-                        </ul>
+                        <TempListing />
+                    </Route>
+
+                    <Route exact path="/components">
+                        {/**
+                         * Components and style guide development go here
+                         *
+                         * e.g.
+                         *
+                         * <Button />
+                         * <ListGroup>
+                         *      <ListItem />
+                         * </ListGroup>
+
+                         */}
                     </Route>
 
                     <p>404 error. Site not found. </p>
