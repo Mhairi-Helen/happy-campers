@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "campsite_name": "Penheim",
+            "price": "£35",
+            "town_city": "Chepstow",
+            "amenities": ["Toilets"],
+            "rating": 4
+        },
+        {
+            "id": 2,
+            "campsite_name": "Treehouse",
+            "price": "£15",
+            "town_city": "Bristol",
+            "amenities": ["Pool", "Aircon"],
+            "rating": 2.5
+        },
+        {
+            "id": 3,
+            "campsite_name": "Glamping",
+            "price": "£100",
+            "town_city": "Glastonbury",
+            "amenities": ["Kitchen", "Toilets"],
+            "rating": 5
+        },
+        {
+            "id": 4,
+            "campsite_name": "The Valleys",
+            "price": "£85",
+            "town_city": "Cardiff",
+            "amenities": ["Kitchen"],
+            "rating": 3.5
+        }
+    ]
+}
