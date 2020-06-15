@@ -16,7 +16,6 @@ const App = () => (
 
   <Router>
     <Header />
-
     <Route exact path='/campsites/:id' render={({ match }) => (
       <Campsite campsite={match.params.id} />
     )} />
