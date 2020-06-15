@@ -7,8 +7,7 @@ import {
     Switch
 } from 'react-router-dom';
 
-import Form from './components/Form/Form';
-import GET from './components/GET/GET';
+
 
 function App() {
     return (
@@ -17,11 +16,25 @@ function App() {
             <Router>
                 <Switch>
                     <Route exact path="/">
-                        <Form />
+                        <form>
+                            <label>Where do you want to camp?</label>
+                            <select>
+                                <option>Bristol</option>
+                                <option>Cornwall</option>
+                                <option>Devon</option>
+                            </select>
+                        </form>
+
+                        <button>Search</button>
                     </Route>
 
                     <Route exact path="/campsites">
-                        <GET></GET>
+                        <ul>
+                            <li>Campsite 1</li>
+                            <li>Campsite 2</li>
+                            <li>Campsite 3</li>
+                            <li>Campsite 4</li>
+                        </ul>
                     </Route>
 
                     <p>404 error. Site not found. </p>
