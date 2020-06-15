@@ -6,7 +6,7 @@ import { updateRegions } from './state';
 import campsites from '../../components/campsites.json';
 import regions from '../../components/regions.json';
 
-export const getCampsites = () => {
+export const getCampsites = (id) => { // pass id into GET url
     return (dispatch) => {
         /** input axios GET request here when we have API routes
          *  GET /regions/<id>

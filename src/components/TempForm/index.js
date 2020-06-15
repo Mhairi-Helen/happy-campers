@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { getRegions } from '../../data/actions/api';
+import { getRegions, getCampsites } from '../../data/actions/api';
 import history from '../../history';
 
 import TempForm from './TempForm';
@@ -14,7 +14,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = (dispatch) => ({
 
             handleRegionsLoad: () => dispatch(getRegions()),
-            handleSubmit: () => { console.log("submitting data for GET request");
+            handleSubmit: id => { dispatch(getCampsites(id));
             history.push('/campsites')
         },
 

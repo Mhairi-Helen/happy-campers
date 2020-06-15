@@ -2,17 +2,11 @@ import React, { Component } from 'react';
 
 class TempListing extends Component {
 
-    // componentDidMount() {
-    //     if(!this.props.loaded) {
-    //         this.props.handleLoad();
-    //     };
-    // };
-
     render() {
 
         const { loaded, campsites } = this.props;
 
-        return !loaded ? <p>Loading... </p> : (
+        return(
             <ul>
                 { !campsites ? <p>No results found.</p> : (
                     campsites.map((campsite, index) => (
