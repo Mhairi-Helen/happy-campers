@@ -5,6 +5,13 @@ export const findCampsites = (data) => {
     };
 };
 
+export const findCampsite = (data) => {
+    return {
+        type: "SEARCH",
+        campsites: data.data
+    };
+};
+
 export const updateRegions = (data) => {
     return {
         type: "REGIONS",

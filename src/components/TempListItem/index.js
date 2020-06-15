@@ -1,20 +1,18 @@
 import { connect } from 'react-redux';
-import { getCampsites } from '../../data/actions/api';
+import { getCampsiteDetails } from '../../data/actions/api'
 
-import TempListing from './TempListing';
+import TempListItem from './TempListItem';
 
 const mapStateToProps = state => {
     return {
-        loaded: state.loaded,
         campsites: state.campsites,
-        test: state.test,
     };
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    handleLoad: () => dispatch(getCampsites()),
+    handleCampsiteLoad: () => dispatch(getCampsiteDetails()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(TempListing);
+export default connect(mapStateToProps, mapDispatchToProps)(TempListItem);
 
 

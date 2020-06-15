@@ -8,6 +8,7 @@ import {
 
 import TempForm from './TempForm/index';
 import TempListing from './TempListing/index';
+import TempListItem from './TempListItem/index';
 
 /* import history for programmatic navigation */
 import history from '../history';
@@ -18,7 +19,7 @@ const App = () => {
 
             <Router history={ history }>
 
-                <h1>CAMP SITES</h1>
+                <h1>CAMPSITES.CO.UK</h1>
 
                 <Switch>
                     <Route exact path="/">
@@ -30,7 +31,7 @@ const App = () => {
                     </Route>
 
                     <Route exact path="/campsites/:id" render={ ({ match }) => (
-                        <TempListing id={ match.params.id }/>
+                        <TempListItem id={ match.params.id }/>
                     )}>
                     </Route>
 

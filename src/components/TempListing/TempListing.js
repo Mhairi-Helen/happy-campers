@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+/* routing */
+import { Link } from 'react-router-dom';
+
 class TempListing extends Component {
 
     render() {
@@ -11,7 +14,9 @@ class TempListing extends Component {
                 { !campsites ? <p>No results found.</p> : (
                     campsites.map((campsite, index) => (
                         <li key={ index }>
-                            <h1>{ campsite.campsite_name }</h1>
+                            <Link to={`/campsites/${ campsite.id }`}>
+                                <h1>{ campsite.campsite_name }</h1>
+                            </Link>
                             <p>{ campsite.price }</p>
                             <p>Location: { campsite.town_city }</p>
                             <p>Amenities: { campsite.amenities }</p>
