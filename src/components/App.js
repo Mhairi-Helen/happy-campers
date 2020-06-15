@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-    BrowserRouter as Router,
+    Router,
     Route,
     Switch
 } from 'react-router-dom';
@@ -9,11 +9,14 @@ import {
 import TempForm from './TempForm/index';
 import TempListing from './TempListing/index';
 
+/* import history for programmatic navigation */
+import history from '../history';
+
 const App = () => {
     return (
         <div className="App">
 
-            <Router>
+            <Router history={ history }>
 
                 <h1>CAMP SITES</h1>
 

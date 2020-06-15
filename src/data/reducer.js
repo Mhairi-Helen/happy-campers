@@ -3,7 +3,7 @@
 const loadRegions = (state, { regions }) => ({
     ...state,
     regions: regions,
-    loaded: true
+    loadedRegions: true
 })
 
 const loadCampsites = (state, { campsites }) => ({

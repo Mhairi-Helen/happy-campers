@@ -12,7 +12,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    handleLoad: () => dispatch(getCampsites()),
+    handleLoad: () => dispatch(getCampsites())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TempListing);

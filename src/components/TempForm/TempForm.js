@@ -3,7 +3,7 @@ class TempForm extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { value: "" }
+        this.state = { value: "1" }
         this.handleSelect = this.handleSelect.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
@@ -18,9 +18,10 @@ class TempForm extends Component {
         this.setState({ value: e.currentTarget.value })
     }
 
-    handleSelect() {
-
-        console.log("select!")
+    handleSelect(e) {
+        e.preventDefault();
+        console.log(`You selected campsites near region id: ${this.state.value}`);
+        this.props.handleSubmit();
     }
 
     render() {
