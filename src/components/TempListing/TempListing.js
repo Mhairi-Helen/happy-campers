@@ -10,14 +10,21 @@ class TempListing extends Component {
 
     render() {
 
-        const { loaded } = this.props;
+        const { loaded, campsites } = this.props;
 
         return !loaded ? <p>Loading... </p> : (
             <ul>
-                <li>{ this.props.test }</li>
-                <li>Campsite 2</li>
-                <li>Campsite 3</li>
-                <li>Campsite 4</li>
+                { !campsites ? <p>No results found.</p> : (
+                    campsites.map((campsite, index) => (
+                        <li key={ index }>
+                            <h1>{ campsite.campsite_name }</h1>
+                            <p>{ campsite.price }</p>
+                            <p>Location: { campsite.town_city }</p>
+                            <p>Amenities: { campsite.amenities }</p>
+                            <p>Rating: { campsite.rating }/5</p>
+                        </li>
+                    ))
+                )}
             </ul>
         )
     }
