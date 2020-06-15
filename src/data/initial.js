@@ -1,7 +1,9 @@
 const initial = {
     loaded: false,
+    loadedRegions: false,
     campsites: [],
-    test: "testing state"
+    regions: [],
+    test: "testing"
 }
 
 export default initial;

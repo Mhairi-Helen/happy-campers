@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
 
-class TempListing extends Component {
+/* routing */
+import { Link } from 'react-router-dom';
 
-    componentDidMount() {
-        if(!this.props.loaded) {
-            this.props.handleLoad();
-        };
-    };
+class TempListing extends Component {
 
     render() {
 
         const { loaded, campsites } = this.props;
 
-        return !loaded ? <p>Loading... </p> : (
+        return(
             <ul>
                 { !campsites ? <p>No results found.</p> : (
                     campsites.map((campsite, index) => (
                         <li key={ index }>
-                            <h1>{ campsite.campsite_name }</h1>
+                            <Link to={`/campsites/${ campsite.id }`}>
+                                <h1>{ campsite.campsite_name }</h1>
+                            </Link>
                             <p>{ campsite.price }</p>
                             <p>Location: { campsite.town_city }</p>
                             <p>Amenities: { campsite.amenities }</p>
