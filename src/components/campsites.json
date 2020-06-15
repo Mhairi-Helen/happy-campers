@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "campsite_name": "Penheim",
+            "price": "£35",
+            "town_city": "Chepstow",
+            "amenities": [],
+            "rating": 5
+        },
+        {
+            "id": 2,
+            "campsite_name": "Penheim",
+            "price": "£35",
+            "town_city": "Chepstow",
+            "amenities": [],
+            "rating": 5
+        },
+        {
+            "id": 3,
+            "campsite_name": "Penheim",
+            "price": "£35",
+            "town_city": "Chepstow",
+            "amenities": [],
+            "rating": 5
+        },
+        {
+            "id": 4,
+            "campsite_name": "Penheim",
+            "price": "£35",
+            "town_city": "Chepstow",
+            "amenities": [],
+            "rating": 5
+        }
+    ]
+}

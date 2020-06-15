@@ -1,18 +1,16 @@
 import React from 'react';
-import './App.css';
+
 
 import {
     BrowserRouter as Router,
     Route,
     Switch
 } from 'react-router-dom';
-import TempForm from './components/TempForm/TempForm';
-import TempListing from './components/TempListing/TempListing';
 
+import TempForm from './TempForm/TempForm';
+import TempListing from './TempListing/index';
 
-
-
-function App() {
+const App = () => {
     return (
         <div className="App">
 
@@ -25,6 +23,7 @@ function App() {
                     <Route exact path="/campsites">
                         <TempListing />
                     </Route>
+
 
                     <Route exact path="/components">
                         {/**
