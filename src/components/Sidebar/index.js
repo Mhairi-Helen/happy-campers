@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Card from './Card';
+import Sidebar from './SideBar';
 //import { card } from '../../data/actions';
 
 
@@ -17,4 +17,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 };
 
-export default connect(mapStateToProps)(Card);
+export default connect(mapStateToProps)(Sidebar);

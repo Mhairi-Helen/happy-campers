@@ -16,17 +16,14 @@ const Card = ({ name, location, rating, ammenities, price }) => {
                     <p>{location}</p>
                 </header>
 
-
                 <div>
                     <ul>
                         <li>
                             {ammenities}
                         </li>
                     </ul>
-
-
-
                 </div>
+
                 <div>
                     <p>{rating} tents</p>
                     {/* tent icon needed */}

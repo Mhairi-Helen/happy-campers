@@ -4,29 +4,22 @@ import '../css/App.css';
 import {
   BrowserRouter as Router,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
+
+import Header from './Header';
+import Campsite from './Campsite';
+import Sidebar from './Sidebar';
+import Footer from './Footer'
 
 
 const App = () => (
 
   <Router>
+    <Header />
 
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-
+    <Route exact path='/campsites/:id' render={({ match }) => (
+      <Campsite campsite={match.params.id} />
+    )} />
   </Router>
 
 )

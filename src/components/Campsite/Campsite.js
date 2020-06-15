@@ -1,19 +1,34 @@
 import React from "react";
+import Sidebar from "../Sidebar"
 
 
-const Campsite = ({ score, playerName, winner, server, handleClick }) => {
+const Campsite = ({ name, location, price, description, ammenities }) => {
 
     return (
+        <div>
+            <header>
+                <figure>
+                    <img src="http://placekitten.com/500/300" />
+                </figure>
 
-        <div className="col-md-6 mt-4">
-            <div className={"card text-center " + (server ? "bg-dark text-white" : "")}>
-                <h5 className="card-header">{playerName}</h5>
-                <div className="card-body">
-                    <p className="card-text display-1">{score}</p>
-                </div>
-                <div className="card-footer">
-                    <button className={"form-control btn btn-success " + (winner ? "disabled" : null)} disabled={winner} onClick={handleClick}>+</button>
-                </div>
+                <h2>{name}</h2>
+                <p>{location}</p>
+
+                <h3>from {price} per night</h3>
+            </header>
+
+            <div>
+                <h3>Overview</h3>
+                <p>{description}</p>
+                <ul>
+                    <li>
+                        {ammenities}
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <Sidebar />
             </div>
         </div>
     )
