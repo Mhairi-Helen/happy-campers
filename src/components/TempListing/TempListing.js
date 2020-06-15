@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 
 class TempListing extends Component {
 
-    componentDidMount() {
-        if(!this.props.loaded) {
-            this.props.handleLoad();
-        };
-    };
+    // componentDidMount() {
+    //     if(!this.props.loaded) {
+    //         this.props.handleLoad();
+    //     };
+    // };
 
     render() {
 

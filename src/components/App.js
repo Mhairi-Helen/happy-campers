@@ -1,13 +1,12 @@
 import React from 'react';
 
-
 import {
     BrowserRouter as Router,
     Route,
     Switch
 } from 'react-router-dom';
 
-import TempForm from './TempForm/TempForm';
+import TempForm from './TempForm/index';
 import TempListing from './TempListing/index';
 
 const App = () => {
@@ -15,6 +14,9 @@ const App = () => {
         <div className="App">
 
             <Router>
+
+                <h1>CAMP SITES</h1>
+
                 <Switch>
                     <Route exact path="/">
                         <TempForm />
@@ -24,6 +26,10 @@ const App = () => {
                         <TempListing />
                     </Route>
 
+                    <Route exact path="/campsites/:id" render={ ({ match }) => (
+                        <TempListing id={ match.params.id }/>
+                    )}>
+                    </Route>
 
                     <Route exact path="/components">
                         {/**
@@ -42,6 +48,9 @@ const App = () => {
                     <p>404 error. Site not found. </p>
 
                 </Switch>
+
+                <p>Footer goes here. Copyright, 2020. </p>
+
             </Router>
 
         </div>
