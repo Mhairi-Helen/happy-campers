@@ -7,7 +7,6 @@ const mapStateToProps = state => {
     return {
         loadedList: state.loadedList,
         campsites: state.campsites,
-        test: state.test,
     };
 };
 

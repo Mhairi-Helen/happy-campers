@@ -8,7 +8,7 @@ import {
 
 import Header from './Header';
 import Card from './Card';
-import Campsite from './Campsite';
+import Campsite from './Campsite/index.js';
 import Footer from './Footer';
 import Sidebar from './Sidebar';
 import Nav from './Nav';
