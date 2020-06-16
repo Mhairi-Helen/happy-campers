@@ -3,24 +3,34 @@ import React, { Component } from 'react';
 class Review extends Component {
 
     componentDidMount() {
-       this.props.handleCommentsLoad();
+       this.props.handleReviewsLoad();
     }
 
     render() {
 
+        const { reviews, loadedReviews } = this.props;
 
-
-        const { name } = this.props;
-
-        return(
+        return !loadedReviews ? <p>Loading...</p> : (
             <>
                 <h1>Reviews</h1>
-
-                <div>
-                    <p>{ name }</p>
-                    <p>16/06/2020</p>
-                    <p>Adipisicing nulla incididunt in voluptate ad. Duis sint reprehenderit velit sint et laboris irure eiusmod amet nostrud nulla cillum do ea. Magna mollit nisi aute ut exercitation eu labore nostrud. Laborum ullamco deserunt est aliquip.</p>
-                </div>
+                { !reviews ? <p>No reviews found. Be the first to leave a review.</p> : (
+                    reviews.map((review, index) => (
+                        <div key={ index }>
+                            <p>
+                                <strong>
+                                    User: { review.username }
+                                </strong>
+                            </p>
+                            <p>
+                                <em>
+                                    { review.date_posted }
+                                </em>
+                            </p>
+                            <p>Rating: { review.rating }</p>
+                            <p>{ review.review_description }</p>
+                        </div>
+                    ))
+                )}
             </>
         )
     }

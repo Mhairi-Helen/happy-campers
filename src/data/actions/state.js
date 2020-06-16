@@ -18,6 +18,12 @@ export const updateRegions = (data) => {
     return {
         type: "REGIONS",
         regions: data.data
+    };
+};
 
+export const findReviews = (data) => {
+    return {
+        type: "FIND_REVIEWS",
+        reviews: data.data
     };
 };

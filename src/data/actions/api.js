@@ -1,4 +1,4 @@
-import { findCampsite, findCampsites, updateRegions } from './state';
+import { findCampsite, findCampsites, updateRegions, findReviews } from './state';
 
 // import below when we have API routes
 import axios from '../../axios';
@@ -6,6 +6,7 @@ import axios from '../../axios';
 // import campsites from '../../components/campsites.json';
 // import campsite from '../../components/campsite.json';
 // import regions from '../../components/regions.json';
+import reviews from '../../reviews.json';
 
 export const getCampsites = (id) => { // pass id into GET url
     return (dispatch) => {
@@ -41,10 +42,11 @@ export const getRegions = () => {
     };
 };
 
-export const getComments = () => {
+export const getReviews = () => {
     return (dispatch) => {
-
-            dispatch(console.log("hey!"));
-
+        /** create new axios GET request here
+         *  GET /campsites/<id>/reviews
+         */
+            dispatch(findReviews(reviews));
     };
 };
