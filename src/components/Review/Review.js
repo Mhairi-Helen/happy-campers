@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Review extends Component {
 
     componentDidMount() {
-       this.props.handleReviewsLoad();
+       this.props.handleReviewsLoad(this.props.id);
     }
 
     render() {

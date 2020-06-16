@@ -41,7 +41,7 @@ const App = () => {
                     <Route exact path="/campsites/:id" render={ ({ match }) => (
                         <>
                             <Campsite id={ match.params.id }/>
-                            <Review />
+                            <Review id={ match.params.id }/>
                         </>
                     )}>
                     </Route>
