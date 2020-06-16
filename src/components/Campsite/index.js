@@ -4,9 +4,10 @@ import { getCampsiteDetails } from '../../data/actions/api'
 import Campsite from './Campsite';
 
 const mapStateToProps = state => {
+
     return {
         loadedListItem: state.loadedListItem,
-        campsites: state.campsites,
+        campsite: state.currentCampsite,
     };
 };
 

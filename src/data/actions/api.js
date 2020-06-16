@@ -9,7 +9,7 @@ import axios from '../../axios';
 
 export const getCampsites = (id) => { // pass id into GET url
     return (dispatch) => {
-        /** input axios GET request here when we have API routes
+        /**
          *  GET /regions/<id>
          */
         axios.get(`/regions/${id}`).then(({ data }) => {
@@ -20,10 +20,11 @@ export const getCampsites = (id) => { // pass id into GET url
 
 export const getCampsiteDetails = (id) => {
     return (dispatch) => {
-        /** input axios GET request here when we have API routes
+        /**
          *  GET /campsites/<id>
          */
         axios.get(`/campsites/${id}`).then(({ data }) => {
+            console.log(data);
             dispatch(findCampsite(data));
         })
     };
@@ -31,11 +32,19 @@ export const getCampsiteDetails = (id) => {
 
 export const getRegions = () => {
     return (dispatch) => {
-        /** input axios GET request here when we have API routes
+        /**
          *  GET /regions
          */
         axios.get('/regions').then(({ data }) => {
             dispatch(updateRegions(data));
         });
+    };
+};
+
+export const getComments = () => {
+    return (dispatch) => {
+
+            dispatch(console.log("hey!"));
+
     };
 };

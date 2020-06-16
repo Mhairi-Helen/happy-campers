@@ -3,8 +3,8 @@ const initial = {
     loadedListItem: false,
     loadedRegions: false,
     campsites: [],
+    currentCampsite: {},
     regions: [],
-    test: "testing"
 }
 
 export default initial;

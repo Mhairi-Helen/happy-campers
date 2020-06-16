@@ -8,25 +8,17 @@ import {
 
 import Header from './Header';
 import Card from './Card';
-import Campsite from './Campsite';
+import Campsite from './Campsite/index.js';
 import Footer from './Footer';
-import Hero from './Hero';
 import Sidebar from './Sidebar';
 import Nav from './Nav';
 import Socials from './Socials';
+import Review from './Review';
 
 import TempForm from './TempForm/index.js';
-import TempListing from './TempListing/index.js';
-import TempListItem from './TempListItem/index.js';
 
 /* import history for programmatic navigation */
 import history from '../history';
-
-/**
- * test axios
- */
-import axios from '../axios';
-
 
 const App = () => {
     return (
@@ -47,9 +39,14 @@ const App = () => {
                     </Route>
 
                     <Route exact path="/campsites/:id" render={ ({ match }) => (
-                        <Campsite id={ match.params.id }/>
+                        <>
+                            <Campsite id={ match.params.id }/>
+                            <Review />
+                        </>
                     )}>
                     </Route>
+
+
 
                     <Route exact path="/components">
 
