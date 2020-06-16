@@ -10,14 +10,14 @@ const Campsite = ({ price, rating }) => {
                 <h3>Price: {price} per night</h3>
             </header>
             <form>
-                <label for="adults">Number of Adults:</label>
+                <label htmlFor="adults">Number of Adults:</label>
                 <select id="adults">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
                 </select>
-                <label for="children">Number of Children:</label>
+                <label htmlFor="children">Number of Children:</label>
                 <select id="children" >
                     <option>1</option>
                     <option>2</option>
