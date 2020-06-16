@@ -5,10 +5,10 @@ import Nav from "../Nav"
 const Header = () => {
 
     return (
-        <Fragment>
+        <head className="main-head">
             <h1>Happy Campers</h1>
             <Nav />
-        </Fragment>
+        </head>
     )
 };
 

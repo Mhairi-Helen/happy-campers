@@ -45,7 +45,7 @@
 :root{
     --pink: #e6b7d9;
     --mustard: #e6c921;
-    --navy:  #04266f;
+    --navy:  #031b4d;
     --dark-grey: #3a3a3a;
     --light-grey:  #B2B5BA;
     --white: #FEFEFE;
@@ -57,7 +57,7 @@ body{
 }
 
 .wrapper{
-    max-width: 960px;
+    max-width: 1200px;
     width: 95vw;
     margin: 0 auto;
 }

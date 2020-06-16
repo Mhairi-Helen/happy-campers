@@ -1,0 +1,20 @@
+.nav-main{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: var(--dark-grey) 2px;
+}
+
+.nav-main__list{
+    align-items: flex-start;
+}
+
+.nav-main__item{
+    display: inline-block;
+    padding:1rem;
+}
+
+.nav-main__link{
+    color: var(--dark-grey);
+    text-decoration: none;
+} 

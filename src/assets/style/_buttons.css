@@ -1,0 +1,17 @@
+.iconbtn {
+    display: inline-block;
+    width: 2rem; height: 2rem;
+    min-width: 2rem; min-height: 2rem;
+    padding: 2.5%;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.icon{ 
+    display: inline-block;
+    width: 90%; height: 90%;
+    padding: 0;
+    object-fit: contain;  
+
+}

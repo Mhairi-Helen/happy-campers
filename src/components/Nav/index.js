@@ -4,11 +4,11 @@ import React from "react";
 const Nav = () => {
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <ul className="navbar-nav mr-auto">
-                <li className="nav-link active"><a className="nav-link" href="/">Locations</a></li>
-                <li className="nav-link "><a className="nav-link" href="/settings">About</a></li>
-                <li className="nav-link "><a className="nav-link" href="/settings">Contact</a></li>
+        <nav className="nav-main">
+            <ul className="nav-main__list">
+                <li className="nav-main__item"><a className="nav-main__link" href="/">Locations</a></li>
+                <li className="nav-main__item "><a className="nav-main__link" href="/settings">About</a></li>
+                <li className="nav-main__item"><a className="nav-main__link" href="/settings">Contact</a></li>
             </ul>
         </nav>
     )

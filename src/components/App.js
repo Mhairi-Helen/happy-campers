@@ -9,7 +9,7 @@ import {
 import Header from './Header';
 import Card from './Card';
 //import Campsite from './Campsite';
-//import Footer from './Footer';
+import Footer from './Footer';
 import Hero from './Hero';
 
 
@@ -21,8 +21,6 @@ const App = () => {
         <div className="App">
 
             <Router history={history}>
-
-                <h1>Happy Campers</h1>
 
                 <Switch>
                     <Header />
@@ -51,7 +49,7 @@ const App = () => {
 
                 </Switch>
 
-                <p>Footer goes here. Copyright, 2020. </p>
+                <Footer />
 
             </Router>
 
