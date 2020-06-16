@@ -3,23 +3,26 @@
         {
             "id": 1,
             "campsite_id": 1,
+            "date_posted": "12-06-2020",
             "username": "bobthecamper",
             "rating": 4,
-            "review_description": "asdfasdfasdfjas;lfjdlasfkjasldfkj"
+            "review_description": "Adipisicing nulla incididunt in voluptate ad. Duis sint reprehenderit velit sint et laboris irure eiusmod amet nostrud nulla cillum do ea. Magna mollit nisi aute ut exercitation eu labore nostrud. Laborum ullamco deserunt est aliquiplfjdlasfkjasldfkj"
         },
         {
             "id": 2,
             "campsite_id": 1,
+            "date_posted": "12-06-2020",
             "username": "iliketocamp",
             "rating": 5,
-            "review_description": "asdfasdfasdfjas;lfjasdfasdfasfdasfasdfasdfasdlasfkjasldfkj"
+            "review_description": "Adipisicing nulla incididunt in voluptate ad. Duis sint reprehenderit velit sint et laboris irure eiusmod amet nostrud nulla cillum do ea. Magna mollit nisi aute ut exercitation eu labore nostrud. Laborum ullamco deserunt est aliquip."
         },
         {
             "id": 3,
             "campsite_id": 2,
+            "date_posted": "12-06-2020",
             "username": "mad4camping",
             "rating": 3,
-            "review_description": "asdfasdfasdfjas;lfjdlasfkjasldfkj"
+            "review_description": "Adipisicing nulla incididunt in voluptate ad. Duis sint reprehenderit velit sint et laboris irure eiusmod amet nostrud nulla cillum do ea. Magna mollit nisi aute ut exercitation eu labore nostrud. Laborum ullamco deserunt est aliquip."
         }
     ]
 }

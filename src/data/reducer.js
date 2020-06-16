@@ -1,5 +1,3 @@
-
-
 const loadRegions = (state, { regions }) => ({
     ...state,
     regions: regions,
@@ -12,15 +10,21 @@ const loadCampsites = (state, { campsites }) => ({
     loadedList: true,
 })
 
-
-const loadCampsite = (state, action) => ({
+const loadCampsite = (state, { currentCampsite }) => ({
     ...state,
-    currentCampsite: action.currentCampsite,
+    currentCampsite: currentCampsite,
     loadedListItem: true
+})
+
+const loadReviews = (state, { reviews }) => ({
+    ...state,
+    reviews: reviews,
+    loadedReviews: true
 })
 
 const reducer = (state, action) => {
     switch(action.type) {
+        case "FIND_REVIEWS": return loadReviews(state, action);
         case "FIND_CAMPSITE": return loadCampsite(state, action);
         case "FIND_CAMPSITES": return loadCampsites(state, action);
         case "REGIONS": return loadRegions(state, action);
