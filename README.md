@@ -52,7 +52,8 @@ REACT_APP_API_URL=http://localhost:8000/api/
 
 ## Teams
 
-Front end: Mhairi and Dan
+Front end: Mhairi and Dan     
+
 Back end: Harriet and Avi
 
 ## Technology Stack
