@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import './index.css';
-// import './scss/main.scss';
+// import './index.css';
+import '../src/css/main.scss';
 
 // import redux
 import { createStore, applyMiddleware, compose } from 'redux';

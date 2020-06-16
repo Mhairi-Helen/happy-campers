@@ -14,6 +14,12 @@ import TempListItem from './TempListItem/index';
 /* import history for programmatic navigation */
 import history from '../history';
 
+/**
+ * test axios
+ */
+import axios from '../axios';
+
+
 const App = () => {
     return (
         <div className="App">

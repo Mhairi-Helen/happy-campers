@@ -1,1 +1,14 @@
-$font: arial, sans-serif;
+
+
+/* colors */
+$fontColor: rgb(66, 66, 66);
+
+/* font */
+$font: arial, helvetica, sans-serif;
+
+/* temporary */
+
+body {
+    font-family: $font;
+    color: $fontColor;
+}
