@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import './index.css';
-// import './scss/main.scss';
+import './assets/style/main.css';
 
 // import redux
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -21,14 +20,14 @@ import thunk from 'redux-thunk';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(
-  reducer,
-  initial,
-  composeEnhancers(applyMiddleware(thunk)) // remove localstorage and use thunk by passing through applymiddleware
+    reducer,
+    initial,
+    composeEnhancers(applyMiddleware(thunk)) // remove localstorage and use thunk by passing through applymiddleware
 );
 
 ReactDOM.render(
     <React.StrictMode>
-        <Provider store={ store }>
+        <Provider store={store}>
             <App />
         </Provider>
     </React.StrictMode>,

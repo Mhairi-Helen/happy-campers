@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.scss';
 
 import {
     Router,
@@ -7,9 +6,12 @@ import {
     Switch
 } from 'react-router-dom';
 
-import TempForm from './TempForm/index';
-import TempListing from './TempListing/index';
-import TempListItem from './TempListItem/index';
+import Header from './Header';
+import Card from './Card';
+//import Campsite from './Campsite';
+import Footer from './Footer';
+import Hero from './Hero';
+
 
 /* import history for programmatic navigation */
 import history from '../history';
@@ -18,23 +20,16 @@ const App = () => {
     return (
         <div className="App">
 
-            <Router history={ history }>
-
-                <h1>CAMPSITES.CO.UK</h1>
+            <Router history={history}>
 
                 <Switch>
-                    <Route exact path="/">
-                        <TempForm />
-                    </Route>
+                    <Header />
 
-                    <Route exact path="/campsites">
-                        <TempListing />
-                    </Route>
 
-                    <Route exact path="/campsites/:id" render={ ({ match }) => (
-                        <TempListItem id={ match.params.id }/>
+                    {/* <Route exact path="/campsites/:id" render={({ match }) => (
+                        <Campsite id={match.params.id} />
                     )}>
-                    </Route>
+                    </Route> */}
 
                     <Route exact path="/components">
                         {/**
@@ -54,7 +49,7 @@ const App = () => {
 
                 </Switch>
 
-                <p>Footer goes here. Copyright, 2020. </p>
+                <Footer />
 
             </Router>
 
