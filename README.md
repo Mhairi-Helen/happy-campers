@@ -11,11 +11,12 @@ We were tasked with creating a full stack application from requirements gatherin
 npm i && npm start
 ```
 
-### Connect Locally with API
 
-App still in development. You can access the API locally by cloning the API repo located [here](https://github.com/harrietgoddard/camping-api).
+### Run local API
 
-Then run the following commands to setup Homestead, spin up Vagrant and migrate the database tables.
+App is still in development but you can access the API locally from your machine by cloning this repo [here](https://github.com/harrietgoddard/camping-api).
+
+Clone the API repo, and run the following commands.
 
 ```
 git clone git@github.com:harrietgoddard/camping-api.git
@@ -65,7 +66,8 @@ baseURL: process.env.REACT_APP_API_URL,
 
 ## Teams
 
-Front end: Mhairi and Dan
+Front end: Mhairi and Dan     
+
 Back end: Harriet and Avi
 
 ## Technology Stack
