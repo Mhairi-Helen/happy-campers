@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/App.css';
+import '../style/App.css';
 
 import {
   BrowserRouter as Router,
@@ -9,7 +9,7 @@ import {
 import Header from './Header';
 import Campsite from './Campsite';
 import Sidebar from './Sidebar';
-import Footer from './Footer'
+// import Footer from './Footer'
 
 
 const App = () => (
