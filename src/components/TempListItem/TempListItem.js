@@ -15,8 +15,6 @@ class TempListItem extends Component {
 
         const { campsites, id } = this.props;
 
-
-
         return(
             <article>
                 <header>
