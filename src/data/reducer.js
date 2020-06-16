@@ -9,13 +9,26 @@ const loadRegions = (state, { regions }) => ({
 const loadCampsites = (state, { campsites }) => ({
     ...state,
     campsites: campsites,
-    loadedList: true
+    loadedList: true,
+    loadedListItem: true // temporary addition for changes below
 })
 
-const loadCampsite = (state, { campsites }) => ({
+/**
+ *
+ * @param {*} state
+ * @param {*} campsite
+ *
+ *  checkCampsiteExists and loadCampsite need work
+ *  need to identify if campsite exists in state already and what index its in then push additional data to that object
+ */
+const checkCampsiteExists = (state, campsite) => (
+    this.state.campsites.some(site => site.id === campsite.id ) ? this.state.campsites.indexOf(this.state.campsites.site) : 0
+)
+
+const loadCampsite = (state, { campsite }) => ({
 
     ...state,
-    campsites: campsites,
+    campsites: [...state.campsite, ...state[checkCampsiteExists(state, campsite)][campsite]],
     loadedListItem: true
 })
 

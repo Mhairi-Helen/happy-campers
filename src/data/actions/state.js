@@ -5,9 +5,14 @@ export const findCampsites = (data) => {
     };
 };
 
+
+/**
+ *  temporarily altered to SEARCH but should be UPDATE
+ * @param {*} data
+ */
 export const findCampsite = (data) => {
     return {
-        type: "UPDATE",
+        type: "SEARCH",
         campsites: data.data
     };
 };
