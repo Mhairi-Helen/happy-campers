@@ -17,6 +17,9 @@ class Card extends Component {
                             <Link to={`/campsites/${ campsite.id }`}>
                                 <h1>{ campsite.campsite_name }</h1>
                             </Link>
+
+                            <img src={ campsite.img }></img>
+
                             <p>{ campsite.price }</p>
                             <p>Location: { campsite.town_city }</p>
                             <p>Amenities: { campsite.amenities }</p>

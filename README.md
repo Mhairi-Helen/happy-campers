@@ -66,7 +66,7 @@ baseURL: process.env.REACT_APP_API_URL,
 
 ## Teams
 
-Front end: Mhairi and Dan     
+Front end: Mhairi and Dan
 
 Back end: Harriet and Avi
 
