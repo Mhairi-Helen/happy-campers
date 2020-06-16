@@ -3,17 +3,19 @@ import React, { Component } from 'react';
 class TempListItem extends Component {
 
     componentDidMount() {
+
+        console.log(this.props.id);
         /**
          * axios get request goes here
          */
-        this.props.handleCampsiteLoad();
+        this.props.handleCampsiteLoad(this.props.id);
     };
 
     render() {
 
         const { campsites, id } = this.props;
 
-        console.log(campsites);
+
 
         return(
             <article>

@@ -18,12 +18,14 @@ export const getCampsites = (id) => { // pass id into GET url
     };
 };
 
-export const getCampsiteDetails = () => {
+export const getCampsiteDetails = (id) => {
     return (dispatch) => {
         /** input axios GET request here when we have API routes
          *  GET /campsites/<id>
          */
-        dispatch(findCampsite(campsite));
+        axios.get(`/campsites/${id}`).then(({ data }) => {
+            dispatch(findCampsite(data));
+        })
     };
 };
 
