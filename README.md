@@ -33,7 +33,7 @@ run artisan key:generate
 run artisan migrate
 ```
 
-Then depending on your OS change the `.env` file in your **react front end app directory** using the instructions below.
+Then depending on your OS, **create** an `.env` file in your **react front end app directory** using the instructions below.
 
 ### Mac OS
 
@@ -43,12 +43,24 @@ You need to point the React app towards the appropriate URL. You can edit this i
 REACT_APP_API_URL=http://<laravel url here>/api/
 ```
 
+Then update your `.axios` file in the root directory.
+
+```
+baseURL: process.env.REACT_APP_API_URL,
+```
+
 ### Win OS
 
 You need to point the React app towards the appropriate URL. You can edit this in the `.env` file in the root directory.
 
 ```
 REACT_APP_API_URL=http://localhost:8000/api/
+```
+
+Then update your `.axios` file in the root directory.
+
+```
+baseURL: process.env.REACT_APP_API_URL,
 ```
 
 ## Teams
