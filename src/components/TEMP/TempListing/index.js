@@ -5,7 +5,7 @@ import TempListing from './TempListing';
 
 const mapStateToProps = state => {
     return {
-        loaded: state.loaded,
+        loadedList: state.loadedList,
         campsites: state.campsites,
         test: state.test,
     };

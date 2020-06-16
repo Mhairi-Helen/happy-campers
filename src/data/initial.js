@@ -1,5 +1,6 @@
 const initial = {
-    loaded: false,
+    loadedList: false,
+    loadedListItem: false,
     loadedRegions: false,
     campsites: [],
     regions: [],

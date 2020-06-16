@@ -3,19 +3,14 @@ import React, { Component } from 'react';
 class TempListItem extends Component {
 
     componentDidMount() {
-        /**
-         * axios get request goes here
-         */
-        this.props.handleCampsiteLoad();
+        this.props.handleCampsiteLoad(this.props.id);
     };
 
     render() {
 
-        const { campsites, id } = this.props;
+        const { loadedListItem, campsites, id } = this.props;
 
-        console.log(campsites);
-
-        return(
+        return !loadedListItem ? <p>Loading... </p> : (
             <article>
                 <header>
                     <h2>{ campsites.campsite_name } - { campsites.price }</h2>

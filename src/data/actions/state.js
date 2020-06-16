@@ -5,6 +5,11 @@ export const findCampsites = (data) => {
     };
 };
 
+
+/**
+ *  temporarily altered to SEARCH but should be UPDATE
+ * @param {*} data
+ */
 export const findCampsite = (data) => {
     return {
         type: "SEARCH",
@@ -16,5 +21,6 @@ export const updateRegions = (data) => {
     return {
         type: "REGIONS",
         regions: data.data
+
     };
 };

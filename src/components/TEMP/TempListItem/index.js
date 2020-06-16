@@ -5,12 +5,13 @@ import TempListItem from './TempListItem';
 
 const mapStateToProps = state => {
     return {
+        loadedListItem: state.loadedListItem,
         campsites: state.campsites,
     };
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    handleCampsiteLoad: () => dispatch(getCampsiteDetails()),
+    handleCampsiteLoad: id => dispatch(getCampsiteDetails(id)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TempListItem);

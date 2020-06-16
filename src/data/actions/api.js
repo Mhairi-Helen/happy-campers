@@ -1,7 +1,7 @@
 import { findCampsite, findCampsites, updateRegions } from './state';
 
 // import below when we have API routes
-// import axios from '../../axios';
+import axios from '../../axios';
 
 import campsites from '../../components/campsites.json';
 import campsite from '../../components/campsite.json';
@@ -12,16 +12,20 @@ export const getCampsites = (id) => { // pass id into GET url
         /** input axios GET request here when we have API routes
          *  GET /regions/<id>
          */
-        dispatch(findCampsites(campsites));
+        axios.get(`/regions/${id}`).then(({ data }) => {
+            dispatch(findCampsites(data));
+        })
     };
 };
 
-export const getCampsiteDetails = () => {
+export const getCampsiteDetails = (id) => {
     return (dispatch) => {
         /** input axios GET request here when we have API routes
          *  GET /campsites/<id>
          */
-        dispatch(findCampsite(campsite));
+        axios.get(`/campsites/${id}`).then(({ data }) => {
+            dispatch(findCampsite(data));
+        })
     };
 };
 
@@ -30,6 +34,8 @@ export const getRegions = () => {
         /** input axios GET request here when we have API routes
          *  GET /regions
          */
-        dispatch(updateRegions(regions));
+        axios.get('/regions').then(({ data }) => {
+            dispatch(updateRegions(data));
+        });
     };
 };

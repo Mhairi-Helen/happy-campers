@@ -20,7 +20,7 @@ class TempForm extends Component {
 
     handleSelect(e) {
         e.preventDefault();
-        console.log(`You selected campsites near region id: ${this.state.value}`);
+        // console.log(`You selected campsites near region id: ${this.state.value}`);
         this.props.handleSubmit(this.state.value);
     }
 
