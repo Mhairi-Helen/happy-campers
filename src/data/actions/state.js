@@ -1,7 +1,4 @@
 export const findCampsites = (data) => {
-
-    console.log(data);
-
     return {
         type: "SEARCH",
         campsites: data.data
@@ -10,14 +7,12 @@ export const findCampsites = (data) => {
 
 export const findCampsite = (data) => {
     return {
-        type: "SEARCH",
+        type: "UPDATE",
         campsites: data.data
     };
 };
 
 export const updateRegions = (data) => {
-
-    console.log(data);
     return {
         type: "REGIONS",
         regions: data.data
