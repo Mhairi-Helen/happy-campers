@@ -1,14 +1,14 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Nav from "../Nav"
 
 
 const Header = () => {
 
     return (
-        <head className="main-head">
+        <header className="main-head">
             <h1>Happy Campers</h1>
             <Nav />
-        </head>
+        </header>
     )
 };
 

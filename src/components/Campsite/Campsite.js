@@ -9,13 +9,13 @@ class Campsite extends Component {
 
     render() {
 
-        const { loadedListItem, campsites, id } = this.props;
+        const { loadedListItem, campsites } = this.props;
 
         return !loadedListItem ? <p>Loading... </p> : (
             <div>
                 <header>
                     <figure>
-                        <img src={ campsites.img } />
+                        <img alt="" src={ campsites.img } />
                     </figure>
 
                     <h2>{ campsites.campsite_name }</h2>

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { getReviews } from '../../data/actions/api'
+// import { getReviews } from '../../data/actions/api'
 
 import Review from './Review';
 
@@ -10,7 +10,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    handleReviewLoad: id => dispatch(getReviewDetails(id)),
+    handleCommentsLoad: () => console.log("loaded")
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Review);

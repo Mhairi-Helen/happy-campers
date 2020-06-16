@@ -3,10 +3,12 @@ import React, { Component } from 'react';
 class Review extends Component {
 
     componentDidMount() {
-        this.props.handleCommentsLoad();
+       this.props.handleCommentsLoad();
     }
 
     render() {
+
+
 
         const { name } = this.props;
 

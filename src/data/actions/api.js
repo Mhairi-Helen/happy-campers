@@ -39,3 +39,11 @@ export const getRegions = () => {
         });
     };
 };
+
+export const getComments = () => {
+    return (dispatch) => {
+
+            dispatch(console.log("hey!"));
+
+    };
+};
