@@ -14,6 +14,7 @@ import Hero from './Hero';
 import Sidebar from './Sidebar';
 import Nav from './Nav';
 import Socials from './Socials';
+import Reviews from './Reviews';
 
 import TempForm from './TempForm/index.js';
 import TempListing from './TempListing/index.js';
@@ -47,9 +48,14 @@ const App = () => {
                     </Route>
 
                     <Route exact path="/campsites/:id" render={ ({ match }) => (
-                        <Campsite id={ match.params.id }/>
+                        <>
+                            <Campsite id={ match.params.id }/>
+                            <Reviews />
+                        </>
                     )}>
                     </Route>
+
+
 
                     <Route exact path="/components">
 
