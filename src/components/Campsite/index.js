@@ -6,11 +6,10 @@ import Campsite from './Campsite';
 const mapStateToProps = (state, ownProps) => {
 
     return {
-        name: state.campsites.find((site) => {
+        campsite: state.campsites.find((site) => {
             return site.id === +ownProps.campsite_id;
         })
     }
-
 };
 
 
