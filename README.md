@@ -32,6 +32,7 @@ run artisan key:generate
 run artisan migrate
 
 Then depending on your OS, you need to change the `.env` file in the **react front end app** using the instructions below.
+```
 
 ### Mac OS
 
