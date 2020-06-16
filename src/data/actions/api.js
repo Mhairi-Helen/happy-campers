@@ -3,9 +3,9 @@ import { findCampsite, findCampsites, updateRegions } from './state';
 // import below when we have API routes
 import axios from '../../axios';
 
-import campsites from '../../components/campsites.json';
-import campsite from '../../components/campsite.json';
-import regions from '../../components/regions.json';
+// import campsites from '../../components/campsites.json';
+// import campsite from '../../components/campsite.json';
+// import regions from '../../components/regions.json';
 
 export const getCampsites = (id) => { // pass id into GET url
     return (dispatch) => {

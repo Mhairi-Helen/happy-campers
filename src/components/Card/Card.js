@@ -1,38 +1,32 @@
-import React from "react";
+import React, { Component } from 'react';
 
+/* routing */
+import { Link } from 'react-router-dom';
 
-const Card = ({ name, location, rating, ammenities, price }) => {
+class Card extends Component {
 
-    return (
+    render() {
 
-        <div>
-            <div>
-                <figure>
-                    <img src="http://placekitten.com/200/300" />
-                </figure>
+        const { loadedList, campsites } = this.props;
 
-                <header>
-                    <h5>{name}</h5>
-                    <p>{location}</p>
-                </header>
-
-                <div>
-                    <ul>
-                        <li>
-                            {ammenities}
+        return !loadedList ? <p>Loading... </p> : (
+            <ul>
+                { !campsites ? <p>No results found.</p> : (
+                    campsites.map((campsite, index) => (
+                        <li key={ index }>
+                            <Link to={`/campsites/${ campsite.id }`}>
+                                <h1>{ campsite.campsite_name }</h1>
+                            </Link>
+                            <p>{ campsite.price }</p>
+                            <p>Location: { campsite.town_city }</p>
+                            <p>Amenities: { campsite.amenities }</p>
+                            <p>Rating: { campsite.rating }/5</p>
                         </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p>{rating} tents</p>
-                    {/* tent icon needed */}
-                    <p>{price}</p>
-                    <button><a>Book here</a></button>
-                </div>
-            </div>
-        </div>
-    )
+                    ))
+                )}
+            </ul>
+        )
+    }
 }
 
 export default Card;

@@ -1,20 +1,20 @@
 import { connect } from 'react-redux';
+import { getCampsites } from '../../data/actions/api';
+
 import Card from './Card';
-//import { card } from '../../data/actions';
 
-
-const mapStateToProps = (state, ownProps) => {
+const mapStateToProps = state => {
     return {
-        name: state.campsites.find((site) => {
-            return site.id === +ownProps.campsite_id;
-        })
-    }
-}
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-
-    }
+        loadedList: state.loadedList,
+        campsites: state.campsites,
+        test: state.test,
+    };
 };
 
-export default connect(mapStateToProps)(Card);
+const mapDispatchToProps = (dispatch) => ({
+    handleLoad: () => dispatch(getCampsites())
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Card);
+
+
