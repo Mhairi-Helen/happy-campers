@@ -43,21 +43,22 @@
 
 
 :root{
-    --pink: #e6b7d9;
+    --pink: #bda1b5;
     --mustard: #e6c921;
-    --navy:  #031b4d;
+    --navy:  #081226;
+    --sand: rgb(255, 247, 240);
     --dark-grey: #3a3a3a;
     --light-grey:  #B2B5BA;
     --white: #FEFEFE;
 }
 
 body{
-
     font-family: 'Dosis', sans-serif;
 }
 
 .wrapper{
-    max-width: 1200px;
-    width: 95vw;
+    max-width: 1800px;
+    width: 100vw;
     margin: 0 auto;
+    background-color: var(--white);
 }
