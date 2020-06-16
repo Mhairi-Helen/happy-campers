@@ -1,0 +1,19 @@
+{
+    "data": {
+        "id": 1,
+        "region_id": 2,
+        "campsite_name": "Penheim",
+        "price": "£35.00",
+        "description": "Lorem ipsum description here",
+        "address": "123 Campville",
+        "town_city": "Chepstow",
+        "postcode": "BS12 4GF",
+        "amenities": [
+            "Toilets",
+            "Pool"
+        ],
+        "rating": 4,
+        "contact_no": "0191232182",
+        "contact_email": "contact@penheim.com"
+    }
+}
