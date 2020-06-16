@@ -1,23 +1,19 @@
 import { connect } from 'react-redux';
+import { getCampsiteDetails } from '../../data/actions/api'
+
 import Campsite from './Campsite';
-//import { campsite } from '../../data/actions';
 
-
-const mapStateToProps = (state, ownProps) => {
-
+const mapStateToProps = state => {
     return {
-        campsite: state.campsites.find((site) => {
-            return site.id === +ownProps.campsite_id;
-        })
-    }
+        loadedListItem: state.loadedListItem,
+        campsites: state.campsites,
+    };
 };
 
+const mapDispatchToProps = (dispatch) => ({
+    handleCampsiteLoad: id => dispatch(getCampsiteDetails(id)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Campsite);
 
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-
-    }
-};
-
-export default connect(mapStateToProps)(Campsite);

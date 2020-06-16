@@ -1,40 +1,45 @@
-import React from "react";
+import React, { Component } from 'react';
 import Sidebar from "../Sidebar"
 
+class Campsite extends Component {
 
-const Campsite = ({ campsite }) => {
+    componentDidMount() {
+        this.props.handleCampsiteLoad(this.props.id);
+    };
 
+    render() {
 
-    const { image, campsite_name, price, description, address, town_city, postcode, ammenities, rating, contact_no, contact_email } = campsite;
+        const { loadedListItem, campsites, id } = this.props;
 
-    return (
-        <div>
-            <header>
-                <figure>
-                    <img src="http://placekitten.com/500/300" />
-                </figure>
-
-                <h2>{campsite_name}</h2>
-                <p>{town_city}</p>
-
-                <h3>from {price} per night</h3>
-            </header>
-
+        return !loadedListItem ? <p>Loading... </p> : (
             <div>
-                <h3>Overview</h3>
-                <p>{description}</p>
-                <ul>
-                    <li>
-                        {ammenities}
-                    </li>
-                </ul>
-            </div>
+                <header>
+                    <figure>
+                        <img src="http://placekitten.com/500/300" />
+                    </figure>
 
-            <div>
-                <Sidebar />
+                    <h2>{ campsites.campsite_name }</h2>
+                    <p>{ campsites.town_city }</p>
+
+                    <h3>from { campsites.price } per night</h3>
+                </header>
+
+                <div>
+                    <h3>Overview</h3>
+                    <p>{ campsites.description }</p>
+                    <ul>
+                        <li>
+                            { campsites.amenities }
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <Sidebar />
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
 
 export default Campsite;

@@ -8,10 +8,16 @@ import {
 
 import Header from './Header';
 import Card from './Card';
-//import Campsite from './Campsite';
+import Campsite from './Campsite';
 import Footer from './Footer';
 import Hero from './Hero';
+import Sidebar from './Sidebar';
+import Nav from './Nav';
+import Socials from './Socials';
 
+import TempForm from './TempForm/index.js';
+import TempListing from './TempListing/index.js';
+import TempListItem from './TempListItem/index.js';
 
 /* import history for programmatic navigation */
 import history from '../history';
@@ -32,27 +38,33 @@ const App = () => {
 
                 <Switch>
 
+                    <Route exact path="/">
+                        <TempForm />
+                    </Route>
 
+                    <Route exact path="/campsites">
+                        <Card />
+                    </Route>
 
-
-
-                    {/* <Route exact path="/campsites/:id" render={({ match }) => (
-                        <Campsite id={match.params.id} />
+                    <Route exact path="/campsites/:id" render={ ({ match }) => (
+                        <Campsite id={ match.params.id }/>
                     )}>
-                    </Route> */}
+                    </Route>
 
                     <Route exact path="/components">
+
+
                         {/**
                          * Components and style guide development go here
                          *
-                         * e.g.
-                         *
-                         * <Button />
-                         * <ListGroup>
-                         *      <ListItem />
-                         * </ListGroup>
-
                          */}
+                        <Footer/>
+                        <Sidebar />
+                        <Card />
+                        <Header />
+                        <Nav />
+                        <Socials />
+
                     </Route>
 
                     <p>404 error. Site not found. </p>
