@@ -13,7 +13,7 @@ class Review extends Component {
         return !loadedReviews ? <p>Loading...</p> : (
             <>
                 <h1>Reviews</h1>
-                { !reviews ? <p>No reviews found. Be the first to leave a review.</p> : (
+                { reviews.length === 0 ? <p>No reviews found. Be the first to leave a review.</p> : (
                     reviews.map((review, index) => (
                         <div key={ index }>
                             <p>
