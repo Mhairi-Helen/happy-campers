@@ -1,6 +1,6 @@
 export const findCampsites = (data) => {
     return {
-        type: "SEARCH",
+        type: "FIND_CAMPSITES",
         campsites: data.data
     };
 };
