@@ -11,6 +11,7 @@ We were tasked with creating a full stack application from requirements gatherin
 npm i && npm start
 ```
 
+
 ### Run local API
 
 App is still in development but you can access the API locally from your machine by cloning this repo [here](https://github.com/harrietgoddard/camping-api).

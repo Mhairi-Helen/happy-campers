@@ -15,7 +15,9 @@ class Campsite extends Component {
             <div>
                 <header>
                     <figure>
+
                         <img src={ campsites.img } />
+
                     </figure>
 
                     <h2>{ campsites.campsite_name }</h2>
