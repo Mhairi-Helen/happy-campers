@@ -2,45 +2,45 @@
     font-family: 'CaveatBrush' ;
     font-style: normal;
     font-weight: 400;
-    src: url('../Fonts/CaveatBrush-Regular.ttf') format('truetype')   
+    src: url('../fonts/CaveatBrush-Regular.ttf') format('truetype')
 }
 
 @font-face{
     font-family: 'Dosis' ;
     font-style: normal;
     font-weight: 700;
-    src: url('../Fonts/Dosis-Bold.ttf') format('truetype')   
+    src: url('../fonts/Dosis-Bold.ttf') format('truetype')
 }
 
 @font-face{
     font-family: 'Dosis'  ;
     font-style: normal;
     font-weight: 200;
-    src: url('../Fonts/Dosis-Light.ttf') format('truetype') 
-}  
+    src: url('../fonts/Dosis-Light.ttf') format('truetype')
+}
 
 @font-face{
     font-family: 'Dosis'  ;
     font-style: italic;
     font-weight: 300;
-    src: url('../Fonts/Dosis-Medium.ttf') format('truetype') 
-} 
+    src: url('../fonts/Dosis-Medium.ttf') format('truetype')
+}
 
 @font-face{
     font-family: 'Dosis'  ;
     font-style: normal;
     font-weight: 400;
-    src: url('../Fonts/Dosis-Regular.ttf') format('truetype') 
-} 
+    src: url('../fonts/Dosis-Regular.ttf') format('truetype')
+}
 
 @font-face{
     font-family: 'Dosis'  ;
     font-style: italic;
     font-weight: 600;
-    src: url('../Fonts/Dosis-SemiBold.ttf') format('truetype') 
-} 
+    src: url('../fonts/Dosis-SemiBold.ttf') format('truetype')
+}
 
- 
+
 
 :root{
     --pink: #e6b7d9;
@@ -52,7 +52,7 @@
 }
 
 body{
-    
+
     font-family: 'Dosis', sans-serif;
 }
 

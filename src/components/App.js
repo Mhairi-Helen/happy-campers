@@ -28,8 +28,12 @@ const App = () => {
 
             <Router history={history}>
 
+                <Header />
+
                 <Switch>
-                    <Header />
+
+
+
 
 
                     {/* <Route exact path="/campsites/:id" render={({ match }) => (
