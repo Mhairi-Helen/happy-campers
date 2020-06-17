@@ -11,7 +11,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    handleReviewsLoad: () => dispatch(getReviews()),
+    handleReviewsLoad: id => dispatch(getReviews(id)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Review);

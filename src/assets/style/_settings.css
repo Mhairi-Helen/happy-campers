@@ -1,5 +1,5 @@
 @font-face{
-    font-family: 'CaveatBrush' ;
+    font-family: 'CaveatBrush';
     font-style: normal;
     font-weight: 400;
     src: url('../Fonts/CaveatBrush-Regular.ttf') format('truetype')
@@ -40,8 +40,6 @@
     src: url('../Fonts/Barlow-Bold.ttf') format('truetype')
 }
 
-
-
 :root{
     --pink: #A68477;
     --turquoise: #458C8C;
@@ -56,7 +54,7 @@ body{
 }
 
 .wrapper{
-    max-width: 1800px;
+    height: 100vh;
     width: 100vw;
     margin: 0 auto;
     background-color: var(--white);
