@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    margin: 2rem 0;
+    padding: 1rem;
 
 
 }
@@ -11,7 +11,7 @@
 .main-foot{
     display: block;
     height: 200px;
-    margin: 2em auto;
+    margin: 0 auto;
     background-color: var(--navy);
     color: var(--white);
 }
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     max-width:90%;
-    margin: 2rem auto;
+    margin: 0auto;
     padding: 0 auto
 
 }

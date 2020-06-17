@@ -8,6 +8,7 @@ h1{
 }
 
 h2{
+    font-family: 'Dosis', sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: var(--dark-grey);
@@ -16,47 +17,55 @@ h2{
 }
 
 h3{
+    font-family: 'Dosis', sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
 h4{
+    font-family: 'Dosis', sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
 h5{
+    font-family: 'Dosis', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
 h6{
+    font-family: 'Dosis', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
 p{
+    font-family: 'Dosis', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    color: var(--dark-grey);
     word-spacing: 0.5rem;
     line-height: 1.5em;
 
 }
 time{
+    font-family: 'Dosis', sans-serif;
     font-weight: 400;
     color: var(--dark-grey);
 }
 
 ul{
+    font-family: 'Dosis', sans-serif;
     font-size: 1rem;
     color: var(--dark-grey);
     margin-left: 1rem;
 }
+
+
 
 
 
@@ -73,16 +82,6 @@ ul{
     
 }
 
-.hero__head--coral{
-    color: var(--coral);
-}
-
-.hero__head--pacifico{
-    color: var(--turquoise);
-    font-family: 'pacifico';
-    font-weight: 300;
-
-}
 
 
     

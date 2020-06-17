@@ -1,21 +1,22 @@
 /* reset */
 
-/* @import '_reset.css'; */
+@import '_reset.css';
 
 /* atoms */
 
 @import '_settings.css';
 @import '_typography.css';
-/* @import '_media.css';
-@import '_images.css'; */
+/* @import '_media.css'; */
+@import '_images.css';
 @import '_buttons.css';
 
 
 /* molecules */
 @import'_nav.css';
-/* @import '_forms.css';
+@import '_hero.css';
+/* @import '_forms.css'; */
 @import '_card.css';
-@import '_article.css';
+/* @import '_article.css';
 @import '_sidebar.css'; */
 
 
