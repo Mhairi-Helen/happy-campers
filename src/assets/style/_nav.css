@@ -2,13 +2,14 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    font-size: 2rem;
     
 }
 
 .nav-main__list{
     align-items: flex-start;
     margin: 1rem 0;
-    font-size: 1.5rem;
+  
 }
 
 .nav-main__item{
