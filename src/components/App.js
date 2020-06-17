@@ -45,11 +45,11 @@ const App = () => {
 
                     <Filter />
 
-                    <main className="map__container" style={{ display: "flex", width: "100vw" }}>
-                        <div className="card__list" style={{ width: "50vw" }}>
+                    <main className="map__container">
+                        <div className="card__list">
                             <Card />
-
                         </div>
+
                         <div className="map__aside">
                             <MapContainer />
                         </div>

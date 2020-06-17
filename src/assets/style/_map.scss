@@ -2,9 +2,14 @@
      width: 0 !important;
  }
 
- .map__aside {
+.map__aside {
     position: sticky;
     top: 100px;
     width: 50vw;
     height: calc(100vh - 100px);
- }
+}
+
+.map__container {
+   display: flex;
+   width: 100vw;
+}
