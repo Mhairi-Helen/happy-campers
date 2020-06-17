@@ -1,25 +1,38 @@
-
-
 .nav__list {
     display: flex;
+    align-items: center;
 }
 
 .nav__list > li {
     padding: 0 1rem;
 }
 
-%nav__links {
+%nav__link {
     text-decoration: none;
     font-family: $font;
-    color: $secondaryColor;
+    color: $darkGrey;
 }
 
-.nav__links {
-    @extend %nav__links;
+.nav__link {
+    @extend %nav__link;
 }
 
-.nav__links:visited {
-    @extend %nav__links;
+.nav__link:visited {
+    @extend %nav__link;
+}
+
+.nav__link-border {
+    @extend %nav__link;
+    box-shadow:
+    2px 2px 4px 1px rgba(0, 0, 0, 0.2);
+    // -8px -8px 16px 0 rgba(255, 255, 255, 0.5
+    // );
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.nav__link-border > img {
+    margin-right: .5rem;
 }
 
 .nav__icon {

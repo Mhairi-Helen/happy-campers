@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="footer">
 
-            <ul>
+            <ul className="social">
                 <li>
                     <a href="/">
                         <img

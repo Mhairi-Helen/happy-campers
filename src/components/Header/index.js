@@ -21,16 +21,21 @@ const Header = () => {
                             alt="localisation"/>
                         </li>
                         <li>
-                            <a className="nav__links" href="/">Destinations</a>
+                            <a className="nav__link" href="/">Destinations</a>
                         </li>
                         <li >
-                            <a className="nav__links" href="/">About</a>
+                            <a className="nav__link" href="/">About</a>
                         </li>
                         <li>
-                            <a className="nav__links" href="/">Contact</a>
+                            <a className="nav__link" href="/">Contact</a>
                         </li>
-                        <li >
-                            <a className="nav__links" href="/">Log in</a>
+                        <li>
+                            <a className="flex  nav__link-border" href="/">
+                                <img
+                                    className="nav__icon "
+                                    src={require("../../assets/icons/sign-in-alt-solid.svg")}alt="localisation"/>
+                                    Log in
+                            </a>
                         </li>
                     </ul>
                 </nav>
