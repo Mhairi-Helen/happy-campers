@@ -1,0 +1,10 @@
+.map__aside > div > div {
+     width: 0 !important;
+ }
+
+ .map__aside {
+    position: sticky;
+    top: 100px;
+    width: 50vw;
+    height: calc(100vh - 100px);
+ }
