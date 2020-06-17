@@ -85,6 +85,10 @@
 .logo {
     font-family: $displayFont;
     font-size: 2rem;
+
+    &__icon {
+        width: 1.7rem;
+    }
 }
 
 /* display */
