@@ -7,6 +7,7 @@ const initial = {
     currentCampsite: {},
     regions: [],
     reviews: [],
+    filterAmenities: [],
 }
 
 export default initial;

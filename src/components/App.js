@@ -15,6 +15,7 @@ import Nav from './Nav';
 import Socials from './Socials';
 import Review from './Review';
 import Hero from './Hero'
+import Filter from './Filter';
 
 import TempForm from './TempForm/index.js';
 
@@ -35,15 +36,16 @@ const App = () => {
                     <TempForm />
                     <Hero />
                 </Route>
-      
+
                 <Route exact path="/campsites">
+                    <Filter />
                     <Card />
                 </Route>
 
                 <Route exact path="/campsites/:id" render={({ match }) => (
                     <>
                         <Campsite id={match.params.id} />
-                        <Review id={ match.params.id }/>
+                        <Review id={match.params.id} />
                     </>
                 )}>
                 </Route>
