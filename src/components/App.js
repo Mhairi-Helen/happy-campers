@@ -17,7 +17,7 @@ import Review from './Review';
 import Hero from './Hero'
 import MapContainer from './Map/Map';
 
-import TempForm from './TempForm/index.js';
+import Search from './TempForm/index.js';
 
 /* import history for programmatic navigation */
 import history from '../history';
@@ -33,8 +33,10 @@ const App = () => {
             <Switch>
 
                 <Route exact path="/">
-                    <TempForm />
-                    <Hero />
+
+                    <Hero>
+                        <Search />
+                    </Hero>
                 </Route>
 
                 <Route exact path="/campsites">
