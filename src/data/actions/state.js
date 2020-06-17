@@ -6,8 +6,6 @@ export const findCampsites = (data) => {
 };
 
 export const findCampsite = (data) => {
-
-    console.log(data);
     return {
         type: "FIND_CAMPSITE",
         currentCampsite: data.data

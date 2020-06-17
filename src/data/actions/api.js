@@ -6,7 +6,7 @@ import axios from '../../axios';
 // import campsites from '../../components/campsites.json';
 // import campsite from '../../components/campsite.json';
 // import regions from '../../components/regions.json';
-import reviews from '../../reviews.json';
+// import reviews from '../../reviews.json';
 
 export const getCampsites = (id) => { // pass id into GET url
     return (dispatch) => {
@@ -25,7 +25,6 @@ export const getCampsiteDetails = (id) => {
          *  GET /campsites/<id>
          */
         axios.get(`/campsites/${id}`).then(({ data }) => {
-            console.log(data);
             dispatch(findCampsite(data));
         })
     };
@@ -42,11 +41,28 @@ export const getRegions = () => {
     };
 };
 
-export const getReviews = () => {
+export const getReviews = (id) => {
     return (dispatch) => {
         /** create new axios GET request here
          *  GET /campsites/<id>/reviews
          */
-            dispatch(findReviews(reviews));
+        axios.get(`/campsites/${id}/reviews`).then(({ data }) => {
+            dispatch(findReviews(data));
+        });
     };
 };
+
+/**
+ * example of an API request using JSON
+ * the JSON import is at the top of the file
+ *
+ *
+ */
+// export const getReviews = () => {
+//     return (dispatch) => {
+//         /** create new axios GET request here
+//          *  GET /campsites/<id>/reviews
+//          */
+//             dispatch(findReviews(reviews));
+//     };
+// };
