@@ -43,7 +43,7 @@ const App = () => {
                             <Card />
 
                         </div>
-                        <div className="map__aside" style={{ width: "50vw", height: "60vh" }}>
+                        <div className="map__aside">
                             <MapContainer />
                         </div>
                     </main>

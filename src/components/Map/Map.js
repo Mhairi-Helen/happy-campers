@@ -24,24 +24,24 @@ export class MapContainer extends Component {
 
 
         <Marker
-          name={'SOMA'}
+          name={'place1'}
           position={{lat: 51.530826, lng: -2.920554}} />
 
         <Marker
-          name={'Dolores park'}
+          name={'place2'}
           position={{lat: 51.130826, lng: -2.620554}} />
 
 
         <Marker
-          name={'Your position'}
+          name={'place3'}
           position={{lat: 51.330826, lng: -2.820554}} />
 
         <Marker
-          name={'Your position'}
+          name={'place4'}
           position={{lat: 51.430826, lng: -2.720554}} />
 
         <Marker
-          name={'Your position'}
+          name={'place5'}
           position={{lat: 51.430826, lng: -2.520554}} />
 
 
