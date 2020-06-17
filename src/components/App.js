@@ -44,7 +44,6 @@ const App = () => {
                 <Route exact path="/campsites">
 
                     <Filter />
-                    <Card />
 
                     <main className="map__container" style={{ display: "flex", width: "100vw" }}>
                         <div className="card__list" style={{ width: "50vw" }}>
@@ -70,10 +69,17 @@ const App = () => {
                 <Route exact path="/components">
 
 
-                    {/**
-                         * Components and style guide development go here
-                         *
-                         */}
+                    {/*
+                    * Components and style guide development go here
+                    *
+                    */}
+
+                    <h1 className="display-1">display-1</h1>
+                    <h2 className="display-2">display-2</h2>
+                    <h3 className="display-3">display-3</h3>
+
+
+
                     <Footer />
                     <Sidebar />
                     <Card />

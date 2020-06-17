@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import './assets/style/main.css';
+import './assets/style/main.scss';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 // import redux

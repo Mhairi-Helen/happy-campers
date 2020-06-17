@@ -1,13 +1,15 @@
 /* Headings */
 
-h1 {
+/* changed any css that is e.g. h1, h2 and h3. Into classes to avoid directly styling html elements for best practice */
+
+.h1 {
     font-family: 'Dosis', sans-serif;
     font-size: 3rem;
     font-weight: 400;
     color: var(--navy);
 }
 
-h2 {
+.h2 {
     font-family: 'Dosis', sans-serif;
     font-size: 3rem;
     font-weight: 700;
@@ -16,35 +18,35 @@ h2 {
     text-align: center;
 }
 
-h3 {
+.h3 {
     font-family: 'Dosis', sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
-h4 {
+.h4 {
     font-family: 'Dosis', sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
-h5 {
+.h5 {
     font-family: 'Dosis', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
-h6 {
+.h6 {
     font-family: 'Dosis', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
-p {
+.p {
     font-family: 'Dosis', sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -53,13 +55,13 @@ p {
 
 }
 
-time {
+.time {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
     color: var(--dark-grey);
 }
 
-ul {
+.ul {
     font-family: 'Dosis', sans-serif;
     font-size: 1rem;
     color: var(--dark-grey);
@@ -78,3 +80,30 @@ ul {
 }
 
 
+/* logo */
+
+.logo {
+    font-family: $displayFont;
+    font-size: 2rem;
+}
+
+/* display */
+
+%display {
+    font-family: $displayFont;
+}
+
+.display-1 {
+    @extend %display;
+    font-size: 5rem;
+}
+
+.display-2 {
+    @extend %display;
+    font-size: 4rem;
+}
+
+.display-3 {
+    @extend %display;
+    font-size: 3rem;
+}

@@ -5,8 +5,8 @@ import Nav from "../Nav"
 const Header = () => {
 
     return (
-        <header className="main-head">
-            <h1 >Happy Campers</h1>
+        <header className="header">
+            <h1 className="logo primaryColor">Happy Campers</h1>
             <Nav />
         </header>
     )
