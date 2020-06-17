@@ -15,6 +15,7 @@ import Nav from './Nav';
 import Socials from './Socials';
 import Review from './Review';
 import Hero from './Hero'
+import MapContainer from './Map/Map';
 
 import TempForm from './TempForm/index.js';
 
@@ -35,9 +36,17 @@ const App = () => {
                     <TempForm />
                     <Hero />
                 </Route>
-      
+
                 <Route exact path="/campsites">
-                    <Card />
+                    <main className="map__container" style={{ display: "flex", width: "100vw" }}>
+                        <div className="card__list" style={{ width: "50vw" }}>
+                            <Card />
+
+                        </div>
+                        <div className="map__aside" style={{ width: "50vw", height: "60vh" }}>
+                            <MapContainer />
+                        </div>
+                    </main>
                 </Route>
 
                 <Route exact path="/campsites/:id" render={({ match }) => (
@@ -47,7 +56,6 @@ const App = () => {
                     </>
                 )}>
                 </Route>
-
 
 
                 <Route exact path="/components">
