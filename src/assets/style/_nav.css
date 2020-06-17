@@ -2,7 +2,6 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    
 }
 
 .nav-main__list{
@@ -13,10 +12,10 @@
 
 .nav-main__item{
     display: inline-block;
-    padding:1rem;
+    padding: 0 1rem;
 }
 
 .nav-main__link{
     color: var(--dark-grey);
     text-decoration: none;
-} 
+}

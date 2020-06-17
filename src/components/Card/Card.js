@@ -10,21 +10,26 @@ class Card extends Component {
         const { loadedList, campsites } = this.props;
 
         return !loadedList ? <p>Loading... </p> : (
-            <ul >
+
+            <ul className="card__container">
                 {!campsites ? <p>No results found.</p> : (
                     campsites.map((campsite, index) => (
                         <li className="card" key={index}>
 
                             <picture className="card-img">
-                                <img alt="" src={campsite.img}></img>
+                                <img className="card__img" alt="" src={campsite.img}></img>
                             </picture>
-                            <Link to={`/campsites/${campsite.id}`}>
-                                <h3>{campsite.campsite_name}</h3>
-                            </Link>
-                            <p>{campsite.price}</p>
-                            <p>Location: {campsite.town_city}</p>
-                            <p>Amenities: {campsite.amenities}</p>
-                            <p>Rating: {campsite.rating}/5</p>
+                            <section>
+                                <Link to={`/campsites/${campsite.id}`}>
+                                    <h3>{campsite.campsite_name}</h3>
+                                </Link>
+                                <section className="card__details">
+                                    <p>{campsite.price}</p>
+                                    <p>Location: {campsite.town_city}</p>
+                                    <p>Amenities: {campsite.amenities}</p>
+                                    <p>Rating: {campsite.rating}/5</p>
+                                </section>
+                            </section>
                         </li>
                     ))
                 )}

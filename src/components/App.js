@@ -15,8 +15,9 @@ import Nav from './Nav';
 import Socials from './Socials';
 import Review from './Review';
 import Hero from './Hero'
+import MapContainer from './Map/Map';
 
-import TempForm from './TempForm/index.js';
+import Search from './TempForm/index.js';
 
 /* import history for programmatic navigation */
 import history from '../history';
@@ -32,12 +33,22 @@ const App = () => {
             <Switch>
 
                 <Route exact path="/">
-                    <TempForm />
-                    <Hero />
+
+                    <Hero>
+                        <Search />
+                    </Hero>
                 </Route>
-      
+
                 <Route exact path="/campsites">
-                    <Card />
+                    <main className="map__container" style={{ display: "flex", width: "100vw" }}>
+                        <div className="card__list" style={{ width: "50vw" }}>
+                            <Card />
+
+                        </div>
+                        <div className="map__aside">
+                            <MapContainer />
+                        </div>
+                    </main>
                 </Route>
 
                 <Route exact path="/campsites/:id" render={({ match }) => (
@@ -47,7 +58,6 @@ const App = () => {
                     </>
                 )}>
                 </Route>
-
 
 
                 <Route exact path="/components">
