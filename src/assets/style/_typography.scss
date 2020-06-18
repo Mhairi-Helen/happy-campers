@@ -1,8 +1,16 @@
 /* Headings */
 
+<<<<<<< HEAD:src/assets/style/_typography.scss
+/* changed any css that is e.g. h1, h2 and h3. Into classes to avoid directly styling html elements for best practice */
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 3rem;
+=======
 h1{
     font-family: 'CaveatBrush';
     font-size: 3.5rem;
+>>>>>>> master:src/assets/style/_typography.css
     font-weight: 400;
     color: var(--blue);
 }
@@ -23,23 +31,41 @@ h3{
     color: var(--dark-grey);
 }
 
+<<<<<<< HEAD:src/assets/style/_typography.scss
+h4 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 24rem;
+=======
 h4{
     font-family: 'Barlow', sans-serif;
     font-size: 2.4rem;
+>>>>>>> master:src/assets/style/_typography.css
     font-weight: 700;
     color: var(--dark-grey);
 }
 
+<<<<<<< HEAD:src/assets/style/_typography.scss
+h5 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 18rem;
+=======
 h5{
     font-family: 'Barlow', sans-serif;
     font-size: 1.8rem;
+>>>>>>> master:src/assets/style/_typography.css
     font-weight: 700;
     color: var(--dark-grey);
 }
 
+<<<<<<< HEAD:src/assets/style/_typography.scss
+h6 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14rem;
+=======
 h6{
     font-family: 'Barlow', sans-serif;
     font-size: 1.4rem;
+>>>>>>> master:src/assets/style/_typography.css
     font-weight: 700;
     color: var(--dark-grey);
 }
@@ -48,8 +74,8 @@ p{
     font-family: 'Barlow', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    word-spacing: 0.5rem;
-    line-height: 1.5em;
+    word-spacing: 05rem;
+    line-height: 15em;
 
 }
 time{
@@ -77,3 +103,34 @@ ul{
 }
 
 
+/* logo */
+
+.logo {
+    font-family: $displayFont;
+    font-size: 2rem;
+
+    &__icon {
+        width: 1.7rem;
+    }
+}
+
+/* display */
+
+%display {
+    font-family: $displayFont;
+}
+
+.display-1 {
+    @extend %display;
+    font-size: 5rem;
+}
+
+.display-2 {
+    @extend %display;
+    font-size: 4rem;
+}
+
+.display-3 {
+    @extend %display;
+    font-size: 3rem;
+}

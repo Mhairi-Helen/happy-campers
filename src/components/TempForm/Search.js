@@ -29,10 +29,12 @@ class Search extends Component {
         const { regions } = this.props;
 
         return(
-                <div className="search__form">
+                <div className="search">
                     <form
-                        onSubmit={ this.handleSelect }>
-                        <label>Where do you want to camp?</label>
+                        className="search__container"
+                        >
+                        <label className="display-2 search__text">Where's your next adventure?</label>
+
                         <select onChange={ this.handleChange } value={ this.state.value }>
                             { regions.map((region, index) => (
                                 <option
@@ -43,9 +45,10 @@ class Search extends Component {
                             ))}
                         </select>
 
-                        <button>Search</button>
 
                     </form>
+
+                    <button className="search__button" onClick={ this.handleSelect }>Explore</button>
                 </div>
         )
     }

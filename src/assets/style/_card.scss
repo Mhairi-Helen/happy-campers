@@ -1,0 +1,28 @@
+.cardlist {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--sand);
+    margin: 0 0 2rem 0;
+    display: flex;
+}
+
+.card__container {
+    width: 50vw;
+}
+
+.card__details {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img {
+    object-fit: cover;
+}
+
+.card__list {
+    width: "50vw"
+}
