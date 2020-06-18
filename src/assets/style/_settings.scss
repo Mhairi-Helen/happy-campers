@@ -1,10 +1,74 @@
-@font-face {
+@font-face{
     font-family: 'CaveatBrush';
     font-style: normal;
     font-weight: 400;
     src: url('../Fonts/CaveatBrush-Regular.ttf') format('truetype')
 }
 
+@font-face{
+    font-family: 'Barlow' ;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../Fonts/Barlow-Bold.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'Barlow'  ;
+    font-style: normal;
+    font-weight: 200;
+    src: url('../Fonts/Barlow-Light.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'Barlow'  ;
+    font-style: italic;
+    font-weight: 300;
+    src: url('../Fonts/Barlow-Medium.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'Barlow'  ;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Fonts/Barlow-Regular.ttf') format('truetype')
+}
+
+@font-face{
+    font-family: 'Barlow'  ;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../Fonts/Barlow-Bold.ttf') format('truetype')
+}
+
+/* colors */
+
+$primaryColor:  #13326e;
+$secondaryColor: #041e57;
+$tertiaryColor: #e6c921;
+$darkGrey:  #3a3a3a;
+$darkGreyHover:  #3a3a3a8e;
+$lightGrey: #F7F7F7;
+$white: #FEFEFE;
+
+:root{
+    --pink: #A68477;
+    --turquoise: #458C8C;
+    --blue:  #092C73;
+    --grey: #D2D6D9;
+    --dark-grey: #3a3a3a;
+    --white: #FEFEFE;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: var(--white);
+}
 
 
 /* font pairing Archivo + Roboto */
@@ -51,36 +115,15 @@
     src: url('../Fonts/Roboto-Black.ttf') format('truetype')
 }
 
-:root {
-    --pink: #bda1b5;
-    --mustard: #e6c921;
-    --navy:  #081226;
-    --sand: rgb(255, 247, 240);
-    --dark-grey: #3a3a3a;
-    --light-grey:  #B2B5BA;
-    --white: #FEFEFE;
-}
 
 /* fonts */
 
 $displayFont: "ArchivoBlack", helvetica, sans-serif;
 $font: "Roboto", helvetica, sans-serif;
 
-/* colors */
 
-$primaryColor:  #13326e;
-$secondaryColor: #041e57;
-$tertiaryColor: #e6c921;
-$darkGrey:  #3a3a3a;
-$darkGreyHover:  #3a3a3a8e;
-$lightGrey: #F7F7F7;
-$white: #FEFEFE;
 
 /* utilities */
-
-// body{
-//     font-family: 'Dosis', sans-serif;
-// }
 
 .wrapper {
     height: 100vh;
