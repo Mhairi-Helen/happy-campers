@@ -16,7 +16,7 @@ import Socials from './Socials';
 import Review from './Review';
 import Hero from './Hero/Hero'
 import Filter from './Filter';
-// import MapContainer from './Map/Map';
+import MapContainer from './Map/Map';
 
 
 import Search from './TempForm/index.js';
