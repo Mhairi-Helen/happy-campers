@@ -46,7 +46,7 @@ const App = () => {
                     <Filter />
 
                     <main className="map__container">
-                        <div className="card__list">
+                        <div >
                             <Card />
                         </div>
 
