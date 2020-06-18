@@ -2,14 +2,14 @@
 
 /* changed any css that is e.g. h1, h2 and h3. Into classes to avoid directly styling html elements for best practice */
 
-.h1 {
+h1 {
     font-family: 'Dosis', sans-serif;
     font-size: 3rem;
     font-weight: 400;
     color: var(--navy);
 }
 
-.h2 {
+h2 {
     font-family: 'Dosis', sans-serif;
     font-size: 3rem;
     font-weight: 700;
@@ -18,50 +18,50 @@
     text-align: center;
 }
 
-.h3 {
+h3 {
     font-family: 'Dosis', sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
-.h4 {
+h4 {
     font-family: 'Dosis', sans-serif;
-    font-size: 2.4rem;
+    font-size: 24rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
-.h5 {
+h5 {
     font-family: 'Dosis', sans-serif;
-    font-size: 1.8rem;
+    font-size: 18rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
-.h6 {
+h6 {
     font-family: 'Dosis', sans-serif;
-    font-size: 1.4rem;
+    font-size: 14rem;
     font-weight: 700;
     color: var(--dark-grey);
 }
 
-.p {
+p {
     font-family: 'Dosis', sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    word-spacing: 0.5rem;
-    line-height: 1.5em;
+    word-spacing: 05rem;
+    line-height: 15em;
 
 }
 
-.time {
+time {
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
     color: var(--dark-grey);
 }
 
-.ul {
+ul {
     font-family: 'Dosis', sans-serif;
     font-size: 1rem;
     color: var(--dark-grey);
