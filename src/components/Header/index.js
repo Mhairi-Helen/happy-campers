@@ -6,9 +6,13 @@ const Header = () => {
 
     return (
         <header className="header flex">
-                <h1 className="logo primaryColor">Happy C<img className="logo__icon"
+                <h1 className="logo primaryColor">
+                    Happy C
+                    <img className="logo__icon"
                             src={require("../../assets/icons/campground-solid.svg")}
-                            alt="localisation"/>mpers</h1>
+                            alt="localisation"/>
+                    mpers
+                </h1>
 
                 <nav className="nav__container">
                     <ul className="nav__list">

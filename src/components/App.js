@@ -14,7 +14,7 @@ import Sidebar from './Sidebar';
 import Nav from './Nav';
 import Socials from './Socials';
 import Review from './Review';
-import Hero from './Hero'
+import Hero from './Hero/Hero'
 import Filter from './Filter';
 import MapContainer from './Map/Map';
 
