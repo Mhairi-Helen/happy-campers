@@ -1,5 +1,6 @@
 import React from "react";
-import Nav from "../Nav"
+import Nav from "../Nav";
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -7,11 +8,13 @@ const Header = () => {
     return (
         <header className="header flex">
                 <h1 className="logo primaryColor">
-                    Happy C
-                    <img className="logo__icon"
-                            src={require("../../assets/icons/campground-solid.svg")}
-                            alt="localisation"/>
-                    mpers
+                    <Link to="/">
+                        Happy C
+                        <img className="logo__icon"
+                                src={require("../../assets/icons/campground-solid.svg")}
+                                alt="localisation"/>
+                        mpers
+                    </Link>
                 </h1>
 
                 <nav className="nav__container">

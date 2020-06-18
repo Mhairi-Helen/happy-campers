@@ -34,7 +34,7 @@ const Footer = () => {
                 </li>
             </ul>
 
-            <p>&copy; 2020 Happy Campers.</p>
+            <p>&copy; 2020 Happy Campers</p>
         </footer>
     )
 };

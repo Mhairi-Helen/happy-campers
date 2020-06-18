@@ -118,7 +118,7 @@ body{
 
 /* fonts */
 
-$displayFont: "ArchivoBlack", helvetica, sans-serif;
+$displayFont: "Roboto", helvetica, sans-serif;
 $font: "Roboto", helvetica, sans-serif;
 
 
@@ -138,4 +138,11 @@ $font: "Roboto", helvetica, sans-serif;
 
 .align-items {
     align-items: center;
+}
+
+/* Remove default links styling */
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
