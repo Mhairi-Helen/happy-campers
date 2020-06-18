@@ -15,3 +15,21 @@
     object-fit: contain;
 
 }
+
+.button{
+    
+    background-color: var(--turquoise);
+    color: var(--white);
+    text-decoration: none;
+    border: none;
+    font-size: 1rem;
+    padding:1rem 2rem;
+
+}
+
+.button--card{
+    display: inline-block;
+    align-self: center;
+    margin:0.5rem;
+    padding: 1rem 2rem;
+}
