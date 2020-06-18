@@ -26,7 +26,17 @@
 }
 
 .search__button:hover {
-    background-color: $secondaryColor;
+    animation: .3s forwards hover_search;
+}
+
+@keyframes hover_search {
+    from {
+        background-color: $primaryColor;
+    }
+
+    to {
+        background-color: $secondaryColor;
+    }
 }
 
 .search__container > label {
