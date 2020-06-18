@@ -1,0 +1,23 @@
+.nav-main{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+
+.nav-main__list{
+    align-items: flex-start;
+    margin: 1rem 0;
+  
+}
+
+.nav-main__item{
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.nav-main__link{
+    color: var(--dark-grey);
+    text-decoration: none;
+}
