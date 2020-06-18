@@ -11,31 +11,38 @@ class Card extends Component {
 
         return !loadedList ? <p>Loading... </p> : (
 
-            <ul className="card__container">
+            <ul>
                 {!campsites ? <p>No results found.</p> : (
                     campsites.map((campsite, index) => (
                         <li className="card" key={index}>
 
-                            <picture className="card-img">
-                                <img className="card__img" alt="" src={campsite.img}></img>
+                            <picture className="card-img__container">
+                                <img className="card-img" alt="" src={campsite.img}></img>
                             </picture>
 
                             <header className="card__header">
-                                <h4>{campsite.campsite_name}</h4>
+                                <h6>{campsite.campsite_name}</h6>
                                 <p>Location: {campsite.town_city}</p>
                             </header>
 
                             <section className="card__details">
 
-                                <p><b>Amenities:</b> {campsite.amenities}</p>
+                                <p>Amenities:</p>
+                                <ul className="card__list">
+                                    {campsite.amenities.map((amenity, index) => (
+                                        <li key={index}>
+                                            {amenity}
+                                        </li>
+                                    ))}
+                                </ul>
                             </section>
                             <section className="card__rating">
                                 <p>Rating: {campsite.rating}/5</p>
                             </section>
                             <section className="card__price">
                                 <p>From {campsite.price} per night</p>
-                                <button className="button button--card">
-                                    <a href={`/campsites/${campsite.id}`}>Check Availability</a>
+                                <button className="button button--card ">
+                                    <a className="button--card__link" href={`/campsites/${campsite.id}`}>More Info</a>
                                 </button>
                             </section>
 
