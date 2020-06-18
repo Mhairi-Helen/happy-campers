@@ -25,3 +25,10 @@ export const findReviews = (data) => {
         reviews: data.data
     };
 };
+
+export const filterCampsites = (data) => {
+    return {
+        type: "FILTER_CAMPSITES",
+        filter: data
+    };
+};
