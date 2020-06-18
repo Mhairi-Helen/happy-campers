@@ -50,6 +50,8 @@ const App = () => {
                             <Card />
                         </div>
 
+
+
                         <div className="map__aside">
                             <MapContainer />
                         </div>
