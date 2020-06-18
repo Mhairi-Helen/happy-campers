@@ -16,16 +16,21 @@ class Review extends Component {
                 { reviews.length === 0 ? <p>No reviews found. Be the first to leave a review.</p> : (
                     reviews.map((review, index) => (
                         <div key={ index } className="review-card">
-                            <p className="review-header">
-                                <strong>
-                                    User: { review.username }
-                                </strong>
-                            </p>
-                            <p className="review-date">
-                                <em>
-                                    { review.date_posted }
-                                </em>
-                            </p>
+                            <div className="review-header">
+                                <img src={require("../../assets/icons/user.svg")} alt="user"/>
+                                <div>
+                                    <p>
+                                        <strong>
+                                            User: { review.username }
+                                        </strong>
+                                    </p>
+                                    <p className="review-date">
+                                        <em>
+                                            { review.date_posted }
+                                        </em>
+                                    </p>
+                                </div>
+                            </div>
                             <p>Rating: { review.rating }</p>
                             <p>{ review.review_description }</p>
                         </div>
