@@ -1,6 +1,5 @@
 /* Headings */
 
-
 h1 {
     font-family: 'CaveatBrush', sans-serif;
     font-size: 3rem;
@@ -101,6 +100,7 @@ ul{
 
 .display-2 {
     @extend %display;
+    font-weight: 200;
     font-size: 4rem;
 }
 
