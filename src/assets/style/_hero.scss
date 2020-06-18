@@ -3,10 +3,12 @@
     linear-gradient(
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.3)
-    ), url('../images/campAtNight.png');
+    ), url('../images/campfire.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: gray;
+    background-blend-mode: soft-light;
     height: 100%;
     position: relative;
 }
