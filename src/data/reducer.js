@@ -22,13 +22,22 @@ const loadReviews = (state, { reviews }) => ({
     loadedReviews: true
 })
 
+//filtering campsites by amenities
+const filterCampsites = (state, action) => ({
+    ...state,
+    filterAmenities: action.filter,
+})
+
+
 const reducer = (state, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case "FIND_REVIEWS": return loadReviews(state, action);
         case "FIND_CAMPSITE": return loadCampsite(state, action);
         case "FIND_CAMPSITES": return loadCampsites(state, action);
         case "REGIONS": return loadRegions(state, action);
+        case "FILTER_CAMPSITES": return filterCampsites(state, action);
         default: return state;
+
     }
 }
 

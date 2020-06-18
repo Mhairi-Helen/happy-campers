@@ -1,21 +1,12 @@
 import React, { Component } from "react";
 import Dropdown from 'react-bootstrap/Dropdown'
 
-
-
 class Filter extends Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            amenities: [],
-        };
-    }
 
     handleChange = (e) => {
 
-        let newAmenities = [...this.state.amenities];
+        let newAmenities = [...this.props.filterAmenities];
 
         if (e.currentTarget.checked) {
             newAmenities.push(e.currentTarget.value);
@@ -23,32 +14,41 @@ class Filter extends Component {
             newAmenities = newAmenities.filter((amenity) => (amenity !== e.currentTarget.value))
         };
 
-
-        this.setState({ amenities: newAmenities });
-    }
-
-    handleSubmit(e) {
-        e.preventDefault();
+        this.props.handleSaveSettings(newAmenities);
     }
 
     render() {
 
         const { loadedList, amenities } = this.props;
 
-        return (
-            <form>
-                <p>Pitch Type</p>
-                <label htmlFor="tent-pitches">Tent Pitches</label>
-                <input type="checkbox" name="amentities" value="tent-pitches" id="tent-pitches" onChange={this.handleChange} />
+        // { ammenities.map(amenity => (
+        //     <div key={ amenity.id }>
+        //       <label>
+        //       <input>
+        //     </div>
+        //  )) }
 
-                <label htmlFor="caravan-pitches">Caravan Pitches</label>
-                <input type="checkbox" name="amentities" value="caravan-pitches" id="caravan-pitches" onChange={this.handleChange} />
+        return (
+
+
+
+
+
+
+            < form >
+                <p>Pitch Type</p>
+
+                <label htmlFor="tent-sites">Tent Sites</label>
+                <input type="checkbox" name="amentities" value="tent-sites" id="tent-sites" onChange={this.handleChange} />
+
+                <label htmlFor="caravan-sites">Caravan Sites</label>
+                <input type="checkbox" name="amentities" value="caravan-sites" id="caravan-sites" onChange={this.handleChange} />
 
                 <label htmlFor="hard-standing">Hard Standing</label>
                 <input type="checkbox" name="amentities" value="hard-standing" id="hard-standing" onChange={this.handleChange} />
 
-                <label htmlFor="hook-up">Power Hook Up</label>
-                <input type="checkbox" name="amentities" value="hook-up" id="hook-up" onChange={this.handleChange} />
+                <label htmlFor="caravan-power">Caravan Power</label>
+                <input type="checkbox" name="amentities" value="caravan-power" id="caravan-power" onChange={this.handleChange} />
 
                 <p>Washing Facilities</p>
 
@@ -67,8 +67,8 @@ class Filter extends Component {
 
                 <p>Power and Wifi</p>
 
-                <label htmlFor="sockets">Power sockets</label>
-                <input type="checkbox" name="amentities" value="sockets" id="sockets" onChange={this.handleChange} />
+                <label htmlFor="household-power">Household Power</label>
+                <input type="checkbox" name="amentities" value="household-power" id="household-power" onChange={this.handleChange} />
 
                 <label htmlFor="wifi">WiFi</label>
                 <input type="checkbox" name="amentities" value="wifi" id="wifi" onChange={this.handleChange} />
@@ -81,8 +81,8 @@ class Filter extends Component {
                 <label htmlFor="firepit">Fire Pit</label>
                 <input type="checkbox" name="amentities" value="firepit" id="firepit" onChange={this.handleChange} />
 
-                <label htmlFor="bbq">BBQ</label>
-                <input type="checkbox" name="amentities" value="bbq" id="bbq" onChange={this.handleChange} />
+                <label htmlFor="barbeque">Barbeque</label>
+                <input type="checkbox" name="amentities" value="barbeque" id="barbeque" onChange={this.handleChange} />
 
                 <p>Accessibility</p>
 

@@ -16,7 +16,7 @@ import Socials from './Socials';
 import Review from './Review';
 import Hero from './Hero'
 import Filter from './Filter';
-import MapContainer from './Map/Map';
+// import MapContainer from './Map/Map';
 
 
 import Search from './TempForm/index.js';
@@ -46,7 +46,7 @@ const App = () => {
                     <Filter />
                     <Card />
 
-                    <main className="map__container" style={{ display: "flex", width: "100vw" }}>
+                    {/* <main className="map__container" style={{ display: "flex", width: "100vw" }}>
                         <div className="card__list" style={{ width: "50vw" }}>
                             <Card />
 
@@ -54,7 +54,7 @@ const App = () => {
                         <div className="map__aside">
                             <MapContainer />
                         </div>
-                    </main>
+                    </main> */}
 
                 </Route>
 

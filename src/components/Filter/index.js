@@ -1,18 +1,15 @@
 import { connect } from 'react-redux';
-// import { getCampsites } from '../../data/actions/api';
+import { filterCampsites } from '../../data/actions/state';
 import Filter from './Filter';
 
 const mapStateToProps = state => {
     return {
-        // loadedList: state.loadedList,
-        campsites: state.campsites,
-
-        //write a function here to filter out the campsites
+        filterAmenities: state.filterAmenities,
     };
 };
 
-// const mapDispatchToProps = (dispatch) => ({
-//     handleLoad: () => dispatch(getCampsites())
-// });
+const mapDispatchToProps = (dispatch) => ({
+    handleSaveSettings: (data) => dispatch(filterCampsites(data))
+});
 
-export default connect(mapStateToProps)(Filter);
+export default connect(mapStateToProps, mapDispatchToProps)(Filter);
