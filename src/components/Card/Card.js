@@ -19,17 +19,26 @@ class Card extends Component {
                             <picture className="card-img">
                                 <img className="card__img" alt="" src={campsite.img}></img>
                             </picture>
-                            <section>
-                                <Link to={`/campsites/${campsite.id}`}>
-                                    <h3>{campsite.campsite_name}</h3>
-                                </Link>
-                                <section className="card__details">
-                                    <p>{campsite.price}</p>
-                                    <p>Location: {campsite.town_city}</p>
-                                    <p>Amenities: {campsite.amenities}</p>
-                                    <p>Rating: {campsite.rating}/5</p>
-                                </section>
+
+                            <header className="card__header">
+                                <h4>{campsite.campsite_name}</h4>
+                                <p>Location: {campsite.town_city}</p>
+                            </header>
+
+                            <section className="card__details">
+
+                                <p><b>Amenities:</b> {campsite.amenities}</p>
                             </section>
+                            <section className="card__rating">
+                                <p>Rating: {campsite.rating}/5</p>
+                            </section>
+                            <section className="card__price">
+                                <p>From {campsite.price} per night</p>
+                                <button className="button button--card">
+                                    <a href={`/campsites/${campsite.id}`}>Check Availability</a>
+                                </button>
+                            </section>
+
                         </li>
                     ))
                 )}
