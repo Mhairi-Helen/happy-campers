@@ -23,13 +23,24 @@
     text-decoration: none;
     border: none;
     font-size: 1rem;
-    padding:1rem 2rem;
-
+    padding: 1rem ;
+    border-radius: 10px ;
 }
 
 .button--card{
     display: inline-block;
     align-self: center;
-    margin:0.5rem;
+    margin:  1rem;
+}
+
+.button--card__link{
     padding: 1rem 2rem;
+}
+
+.button:hover{
+    background-color: var(--light-turquoise);
+}
+
+.button:active {
+    background-color: var(--turquoise);
 }
