@@ -11,17 +11,17 @@ class Review extends Component {
         const { reviews, loadedReviews } = this.props;
 
         return !loadedReviews ? <p>Loading...</p> : (
-            <>
+            <div className="review-container">
                 <h1>Reviews</h1>
                 { reviews.length === 0 ? <p>No reviews found. Be the first to leave a review.</p> : (
                     reviews.map((review, index) => (
-                        <div key={ index }>
-                            <p>
+                        <div key={ index } className="review-card">
+                            <p className="review-header">
                                 <strong>
                                     User: { review.username }
                                 </strong>
                             </p>
-                            <p>
+                            <p className="review-date">
                                 <em>
                                     { review.date_posted }
                                 </em>
@@ -31,7 +31,7 @@ class Review extends Component {
                         </div>
                     ))
                 )}
-            </>
+            </div>
         )
     }
 

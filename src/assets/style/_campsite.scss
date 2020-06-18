@@ -1,0 +1,56 @@
+.header-campsite {
+    background-image: url("../images/hero-images/113.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h2, h3, p {
+        font-family: "Roboto";
+        font-weight: 300;
+        color: white;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    p {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.main-campsite {
+    padding: 4rem;
+
+    h3, h1 {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+        margin-bottom: 1.5rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+}
+
+

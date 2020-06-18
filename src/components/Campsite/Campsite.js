@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Sidebar from "../Sidebar"
+// import Sidebar from "../Sidebar"
 
 class Campsite extends Component {
 
@@ -13,10 +13,10 @@ class Campsite extends Component {
 
         return !loadedListItem ? <p>Loading... </p> : (
             <div>
-                <header>
-                    <figure>
+                <header className="header-campsite">
+                    {/* <figure>
                         <img alt="" src={ campsite.img } />
-                    </figure>
+                    </figure> */}
 
                     <h2>{ campsite.campsite_name }</h2>
                     <p>{ campsite.town_city }</p>
@@ -24,19 +24,22 @@ class Campsite extends Component {
                     <h3>from { campsite.price } per night</h3>
                 </header>
 
-                <div>
+                <div className="main-campsite">
                     <h3>Overview</h3>
                     <p>{ campsite.description }</p>
+                    <p>Amenities:</p>
                     <ul>
-                        <li>
-                            { campsite.amenities }
-                        </li>
+                        {campsite.amenities.map((amenity, index) => (
+                            <li key={ index }>
+                                { amenity }
+                            </li>
+                        ))}
                     </ul>
                 </div>
 
-                <div>
+                {/* <div>
                     <Sidebar />
-                </div>
+                </div> */}
             </div>
         )
     }
