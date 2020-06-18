@@ -5,9 +5,14 @@ import Card from './Card';
 
 const mapStateToProps = state => {
 
+
     return {
         loadedList: state.loadedList,
-        campsites: state.campsites.filter(campsite => (state.filterAmenities.every((amenity) => campsite.amenities.includes(amenity)))),
+        campsites: (state.campsites.filter(campsite => {
+            return (state.filterAmenities.every((amenity) => {
+                return campsite.amenities.includes(amenity)
+            }))
+        })),
     };
 };
 
