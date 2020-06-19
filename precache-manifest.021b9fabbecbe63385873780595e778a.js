@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "415a0e449381bdfdad4711b35d912576",
+    "revision": "5f8f2430bc5b3efd8aa2897dbb8ea048",
     "url": "/happy-campers/index.html"
   },
   {
-    "revision": "ae92a466e3475b2794cf",
-    "url": "/happy-campers/static/css/main.b2117109.chunk.css"
+    "revision": "149a515d92ee94ae6354",
+    "url": "/happy-campers/static/css/main.f8b26c61.chunk.css"
   },
   {
     "revision": "154c1d8a03e5449d6bfd",
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/happy-campers/static/js/2.8d2feb0d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ae92a466e3475b2794cf",
-    "url": "/happy-campers/static/js/main.9afa6489.chunk.js"
+    "revision": "149a515d92ee94ae6354",
+    "url": "/happy-campers/static/js/main.46a7da78.chunk.js"
   },
   {
     "revision": "70bbca20cf3ec32b7c00",
     "url": "/happy-campers/static/js/runtime-main.80021b30.js"
-  },
-  {
-    "revision": "84f7328b5896ebb594a8d5559e39f41c",
-    "url": "/happy-campers/static/media/113.84f7328b.jpg"
   },
   {
     "revision": "524a4cbdf53cdb9bb2742d2aa7a25c36",
@@ -82,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "22a1fffc7cd5d88249a92c2392802224",
     "url": "/happy-campers/static/media/campground-solid.22a1fffc.svg"
+  },
+  {
+    "revision": "6d635b1c75db35940e3133f35fcf8802",
+    "url": "/happy-campers/static/media/campsiteHero.6d635b1c.jpg"
   },
   {
     "revision": "2f85eb9d46ceb2545fa2ea38ee1e48ff",
