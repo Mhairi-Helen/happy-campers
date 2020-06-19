@@ -51,10 +51,10 @@ const App = () => {
                 )}>
                 </Route>
 
-                <Route exact path="/campsites/:id" render={({ match }) => (
+                <Route exact path="/region/campsites/:id" render={({ match }) => (
                     <>
-                        <Campsite id={match.params.id} />
-                        <Review id={match.params.id} />
+                        <Campsite id={match.params.id}/>
+                        <Review id={match.params.id}/>
                     </>
                 )}>
                 </Route>
