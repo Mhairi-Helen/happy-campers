@@ -43,7 +43,7 @@ export const getRegions = () => {
 
 export const getReviews = (id) => {
     return (dispatch) => {
-        /** create new axios GET request here
+        /**
          *  GET /campsites/<id>/reviews
          */
         axios.get(`/campsites/${id}/reviews`).then(({ data }) => {
@@ -52,17 +52,3 @@ export const getReviews = (id) => {
     };
 };
 
-/**
- * example of an API request using JSON
- * the JSON import is at the top of the file
- *
- *
- */
-// export const getReviews = () => {
-//     return (dispatch) => {
-//         /** create new axios GET request here
-//          *  GET /campsites/<id>/reviews
-//          */
-//             dispatch(findReviews(reviews));
-//     };
-// };

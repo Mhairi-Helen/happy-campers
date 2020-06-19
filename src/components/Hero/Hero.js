@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Hero = ({ children }) => (
-    <main class="hero__img">
-        { children }
+    <main className="hero__img">
+        {children}
     </main>
 )
 
