@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-
-/* routing */
 import { Link } from 'react-router-dom';
 
 class Card extends Component {
+
+    componentDidMount() {
+        this.props.handleCampsitesLoad(this.props.id);
+    }
 
     render() {
 
