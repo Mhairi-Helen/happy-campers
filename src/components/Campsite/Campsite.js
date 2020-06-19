@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Sidebar from "../Sidebar"
 
 class Campsite extends Component {
 

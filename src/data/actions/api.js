@@ -43,7 +43,7 @@ export const getRegions = () => {
 
 export const getReviews = (id) => {
     return (dispatch) => {
-        /** create new axios GET request here
+        /**
          *  GET /campsites/<id>/reviews
          */
         axios.get(`/campsites/${id}/reviews`).then(({ data }) => {
