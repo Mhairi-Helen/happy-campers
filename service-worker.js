@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/happy-campers/precache-manifest.75db8b4c2019097edb930bf7fef85923.js"
+  "/happy-campers/precache-manifest.1cd3085a48f7ea1347ffcbede5ed7d5a.js"
 );
 
 self.addEventListener('message', (event) => {
