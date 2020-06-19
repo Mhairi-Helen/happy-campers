@@ -37,7 +37,6 @@ const reducer = (state, action) => {
         case "REGIONS": return loadRegions(state, action);
         case "FILTER_CAMPSITES": return filterCampsites(state, action);
         default: return state;
-
     }
 }
 
