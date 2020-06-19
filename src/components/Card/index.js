@@ -5,7 +5,6 @@ import Card from './Card';
 
 const mapStateToProps = state => {
 
-
     return {
         loadedList: state.loadedList,
         campsites: (state.campsites.filter(campsite => {
