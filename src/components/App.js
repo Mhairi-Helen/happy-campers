@@ -68,7 +68,7 @@ const App = () => {
 
                 </Route>
 
-                <p>404 error. Site not found. </p>
+                <p>404 error. Site not found.    </p>
 
             </Switch>
 
