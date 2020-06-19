@@ -131,6 +131,7 @@ $font: "Roboto", helvetica, sans-serif;
     width: 100vw;
     margin: 0 auto;
     background-color: var(--white);
+    overflow-x: hidden;
 }
 
 .flex {
