@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-    HashRouter as Router,
+    Router,
     Route,
     Switch
 } from 'react-router-dom';

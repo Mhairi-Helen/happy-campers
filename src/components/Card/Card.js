@@ -42,7 +42,7 @@ class Card extends Component {
                             <section className="card__price">
                                 <p>From {campsite.price} per night</p>
                                 <button className="button button--card ">
-                                    <a className="button--card__link" href={`/campsites/${campsite.id}`}>More Info</a>
+                                    <Link className="button--card__link" to={`/campsites/${campsite.id}`}>More Info</Link>
                                 </button>
                             </section>
 
