@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 class Search extends Component {
 
     constructor(props) {
@@ -20,7 +22,6 @@ class Search extends Component {
 
     handleSelect(e) {
         e.preventDefault();
-        // console.log(`You selected campsites near region id: ${this.state.value}`);
         this.props.handleSubmit(this.state.value);
     }
 
@@ -45,10 +46,11 @@ class Search extends Component {
                             ))}
                         </select>
 
-
                     </form>
 
-                    <button className="search__button" onClick={ this.handleSelect }>Explore</button>
+                    <Link to={`/region/${this.state.value}/campsites`}>
+                        <button className="search__button">Explore</button>
+                    </Link>
                 </div>
         )
     }

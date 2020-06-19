@@ -1,3 +1,4 @@
+
 const loadRegions = (state, { regions }) => ({
     ...state,
     regions: regions,
@@ -28,6 +29,12 @@ const filterCampsites = (state, action) => ({
     filterAmenities: action.filter,
 })
 
+//return list of amenities from backend
+const listAmenities = (state, action) => ({
+    ...state,
+    amenities: action.amenities,
+})
+
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -36,6 +43,7 @@ const reducer = (state, action) => {
         case "FIND_CAMPSITES": return loadCampsites(state, action);
         case "REGIONS": return loadRegions(state, action);
         case "FILTER_CAMPSITES": return filterCampsites(state, action);
+        case "LIST_AMENITIES": return listAmenities(state, action);
         default: return state;
     }
 }

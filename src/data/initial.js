@@ -8,6 +8,7 @@ const initial = {
     regions: [],
     reviews: [],
     filterAmenities: [],
+    amenities: [],
 }
 
 export default initial;
