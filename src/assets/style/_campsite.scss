@@ -1,7 +1,9 @@
 .header-campsite {
-    background-image: url("../images/hero-images/113.jpg");
+    background-image: url("../images/hero-images/campsiteHero.jpg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
+    background-color: gray;
+    background-blend-mode: multiply;
     background-size: cover;
     height: 500px;
     color: white;
