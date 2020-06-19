@@ -1,4 +1,4 @@
-import { findCampsite, findCampsites, updateRegions, findReviews } from './state';
+import { findCampsite, findCampsites, updateRegions, findReviews, listAmenities } from './state';
 
 // import below when we have API routes
 import axios from '../../axios';
@@ -52,3 +52,26 @@ export const getReviews = (id) => {
     };
 };
 
+export const getAmenities = () => {
+    return (dispatch) => {
+
+        axios.get(`/amenities`).then(({ data }) => {
+            dispatch(listAmenities(data));
+        });
+    };
+};
+
+/**
+ * example of an API request using JSON
+ * the JSON import is at the top of the file
+ *
+ *
+ */
+// export const getReviews = () => {
+//     return (dispatch) => {
+//         /** create new axios GET request here
+//          *  GET /campsites/<id>/reviews
+//          */
+//             dispatch(findReviews(reviews));
+//     };
+// };

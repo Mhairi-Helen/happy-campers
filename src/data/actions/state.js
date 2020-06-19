@@ -32,3 +32,11 @@ export const filterCampsites = (data) => {
         filter: data
     };
 };
+
+
+export const listAmenities = (data) => {
+    return {
+        type: "LIST_AMENITIES",
+        amenities: data.data
+    };
+};

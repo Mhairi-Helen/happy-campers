@@ -36,15 +36,9 @@
     box-shadow:
     2px 2px 4px 1px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    line-height: 2rem;
   }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: var(--dark-grey);
-    padding: 1rem;
-    text-decoration: none;
-    display: block;
-  }
+
   
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
@@ -53,9 +47,11 @@
     }
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropbtn:hover {
-    animation: .3s forwards hover_link;
+      animation: .3s forwards hover_link;
 }
